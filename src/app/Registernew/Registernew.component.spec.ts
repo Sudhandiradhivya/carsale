@@ -15,6 +15,7 @@ describe('RegisternewComponent', () => {
     })
     .compileComponents();
   }));
+  
 
   beforeEach(() => {
     fixture = TestBed.createComponent(RegisternewComponent);

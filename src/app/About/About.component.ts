@@ -33,4 +33,5 @@ export class AboutComponent implements OnInit {
   image(){
     location.pathname = ('/Details');
   }
+  
 }

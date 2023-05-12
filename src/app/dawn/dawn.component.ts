@@ -23,4 +23,5 @@ export class DawnComponent implements OnInit {
   ghost(event: any){
       this.content = event.target.src;
   }
+  
 }

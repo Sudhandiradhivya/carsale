@@ -35,12 +35,13 @@ h5{
 
 }
 
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(6,5vw);
   grid-gap: 1.5rem;
-  
+
 }
 
 .gallery img {

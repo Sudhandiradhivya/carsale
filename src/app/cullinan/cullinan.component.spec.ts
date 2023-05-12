@@ -16,6 +16,7 @@ describe('CullinanComponent', () => {
     .compileComponents();
   }));
 
+  
   beforeEach(() => {
     fixture = TestBed.createComponent(CullinanComponent);
     component = fixture.componentInstance;

@@ -16,6 +16,7 @@ describe('LoginnewComponent', () => {
     .compileComponents();
   }));
 
+  
   beforeEach(() => {
     fixture = TestBed.createComponent(LoginnewComponent);
     component = fixture.componentInstance;

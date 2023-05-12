@@ -12,6 +12,7 @@ input[type=text],select, input[type=number]{
 
   /* resize:vertical; */
 }
+
 label, input[type=radio]{
 
   padding: 12px 12px 0px 12px;

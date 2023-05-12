@@ -16,6 +16,7 @@ describe('AngularRegisterComponent', () => {
     .compileComponents();
   }));
 
+  
   beforeEach(() => {
     fixture = TestBed.createComponent(AngularRegisterComponent);
     component = fixture.componentInstance;

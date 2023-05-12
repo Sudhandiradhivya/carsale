@@ -16,6 +16,7 @@ describe('WraithComponent', () => {
     .compileComponents();
   }));
 
+  
   beforeEach(() => {
     fixture = TestBed.createComponent(WraithComponent);
     component = fixture.componentInstance;

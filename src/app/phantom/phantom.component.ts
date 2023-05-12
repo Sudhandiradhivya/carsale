@@ -15,6 +15,7 @@ export class PhantomComponent implements OnInit {
   imageChange(event: any){
       this.url = event.target.src;
   }
+  
   image:string="../../assets/ph4-b.jpg"
   Change(event: any){
       this.image = event.target.src;

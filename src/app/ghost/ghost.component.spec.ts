@@ -16,6 +16,7 @@ describe('GhostComponent', () => {
     .compileComponents();
   }));
 
+  
   beforeEach(() => {
     fixture = TestBed.createComponent(GhostComponent);
     component = fixture.componentInstance;

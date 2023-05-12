@@ -26,6 +26,7 @@ finalData:any;
     })
   }
 
+  
   ngOnInit() {
   }
 

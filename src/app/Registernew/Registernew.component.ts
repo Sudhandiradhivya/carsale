@@ -12,4 +12,5 @@ export class RegisternewComponent implements OnInit {
   ngOnInit() {
   }
 
+  
 }

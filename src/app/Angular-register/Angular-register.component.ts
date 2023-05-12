@@ -41,6 +41,7 @@ export class AngularRegisterComponent implements OnInit {
   }
   ngOnInit() {
   }
+  
 }
 
 

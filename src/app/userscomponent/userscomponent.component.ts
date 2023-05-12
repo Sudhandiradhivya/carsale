@@ -17,6 +17,8 @@ export class UserscomponentComponent implements OnInit {
   @ViewChild(MatSort) sort!: MatSort;
   DetailService: any;
 
+  
+
   constructor(private service:DetailServiceService) { }
   getLoginvalue:any=" ";
    ngOnInit() {
@@ -46,7 +48,7 @@ export class UserscomponentComponent implements OnInit {
       alert('User deleted');
       this.getUsersList();
     }
-    
+
    })
   }
 

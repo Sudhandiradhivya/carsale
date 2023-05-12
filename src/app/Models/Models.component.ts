@@ -15,6 +15,7 @@ export class ModelsComponent implements OnInit {
       this.getProduct=data;
     });
   }
+  
 
 
   ngOnInit() {

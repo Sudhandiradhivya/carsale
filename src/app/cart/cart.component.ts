@@ -19,6 +19,7 @@ export class CartComponent implements OnInit {
   jumpTo(section:any){
     document.getElementById(section)?.scrollIntoView({behavior:'smooth'});
  }
+ 
   // show=true;
   // closepopup(){
   //   this.show=false;
