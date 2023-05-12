@@ -1,0 +1,31 @@
+<div class="body">
+  <div class="container">
+    <div class="main">
+
+      <div class="logo">
+        <img src="../../assets/Rolls Royce Logo.png" width="160px" height="100px" alt="img" />
+      </div>
+
+
+      <div class="navbar">
+
+        <ul>
+
+          <li><a routerLink="/home" routerLinkActive="active"> Home</a></li>
+          <li><a routerLink="/About" routerLinkActive="active">About Us</a></li>
+          <li class="/drop" routerLinkActive="active"><a routerLink="/Service">Service</a></li>
+          <li class="/dropdown" routerLinkActive="active"><a routerLink="/Models" id="carDropdown">Models</a></li>
+
+        </ul>
+        <div class="subnav">
+          <a routerLink="/loginnew" (click)="login()">Login </a>
+        </div>
+        <div class="subnav" *ngIf="loggedin()">
+          <a>Logout</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>

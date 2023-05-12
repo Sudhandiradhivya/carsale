@@ -1,0 +1,68 @@
+<app-header></app-header>
+<div class="container">
+  <form action="" [formGroup]="serviceForm" >
+   <div class="row">
+           <div class="col-25">
+                 <label>Customer Id</label>
+           </div>
+           <div class="col-75">
+                <input type="number" placeholder="Enter valid customer id" formControlName="custId">
+          </div><br>
+   </div>
+   <div class="row">
+       <div class="col-25">
+        <label>Vehicle Number</label>
+       </div>
+       <div class="col-75">
+        <input type="text" placeholder="Enter Vehicle number" formControlName="vehicleNumber">
+       </div>
+  </div><br>
+<div class="row">
+  <div class="col-25">
+     <label>Mileage</label>
+  </div>
+  <div class="col-75">
+    <input type="number" placeholder="Enter Mileage" formControlName="mileage">
+  </div>
+</div>
+    <br>
+<div class="row">
+  <div class="col-25">
+    <label>Last Service Period</label>
+  </div><br>
+  <div class="col-75">
+    <input type="radio" value="6 Month" name="name" id="btn1" >
+    <span>6 Month</span><br>
+    <input type="radio" value="1 Year" name="name" id="btn2">
+    <span>1 Year</span>
+  </div>
+</div>
+  <div class="row">
+    <div class="col-25">
+    <label>Branch</label>
+   </div>
+   <div class="col-75">
+    <input type="text" placeholder="Enter Branch" formControlName="branch">
+  </div><br>
+  <div class="row">
+    <div class="col-25">
+    <label id="service">Service</label>
+  </div>
+  <div class="col-75">
+        <select id="services" formControlName="service">
+          <option value="Maintanence Package">Maintanence Package</option>
+          <option value="Light and Accessories">Light and Accessories</option>
+          <option value="Exhaust System">Exhaust System</option>
+          <option value="Oil Change">Oil Change</option>
+          <option value="Brakes and Brakes Repair">Brakes and Brakes Repair</option>
+          <option value="New Tire and Tire Repair">New Tire and Tire Repair</option>
+        </select>
+      </div>
+    </div><br>
+    <div class="col-75">
+    <button type="submit" style="text-decoration: none;" (click)="submit()" [disabled]="serviceForm.invalid">Submit</button>
+  </div>
+  </div>
+  </form>
+</div>
+<app-footer></app-footer>
