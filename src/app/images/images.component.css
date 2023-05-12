@@ -55,4 +55,10 @@ mat-form-field{
 .News-content{
   display: flex;
   flex-wrap: wrap;
+  padding: 40px;
+}
+.headline button a
+{
+text-decoration: none;
+color: white;
 }

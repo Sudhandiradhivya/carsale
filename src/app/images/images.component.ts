@@ -4,6 +4,7 @@ import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
 import { DetailServiceService } from '../detailService.service';
 import {MatCardModule} from '@angular/material/card';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-images',
@@ -19,12 +20,22 @@ export class ImagesComponent implements OnInit {
   @ViewChild(MatSort) sort!: MatSort;
   DetailService: any;
   news:any;
-  constructor(private service:DetailServiceService) { }
+  reviews:any;
+  constructor(private service:DetailServiceService,private activateRoute:ActivatedRoute) { }
   getLoginvalue:any=" ";
    ngOnInit() {
      this.getImagesList();
      this.getNewsList();
+     this.getReviewList();
+     this.activateRoute.fragment.subscribe((value)=>{
+          console.log(value);
+          this.jumpTo(value);
+     });
+
    }
+   jumpTo(section:any){
+    document.getElementById(section)?.scrollIntoView({behavior:'smooth'});
+ }
    getImagesList(){
     this.service.getImagesList().subscribe({
       next:(res:any)=>{
@@ -55,6 +66,12 @@ export class ImagesComponent implements OnInit {
        this.service.getNewsList().subscribe((response)=>
        {
           this.news=response;
+       })
+     }
+     getReviewList(){
+      this.service.getReviewList().subscribe((response)=>
+       {
+          this.reviews=response;
        })
      }
 

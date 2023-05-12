@@ -28,10 +28,13 @@ export class AboutComponent implements OnInit {
     location.pathname = ('/Cart');
   }
   review(){
-    // this.route.navigate(['/Details', reviews]);
+    location.pathname = ('/images');
+  }
+  news(){
+    location.pathname = ('/images');
   }
   image(){
-    location.pathname = ('/Details');
+    location.pathname = ('/images');
   }
-  
+
 }
