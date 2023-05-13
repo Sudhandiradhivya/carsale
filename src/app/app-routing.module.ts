@@ -57,7 +57,7 @@ const routes: Routes = [
   {
     path:"Models",
     component:ModelsComponent,
-   canActivate:[OrderGuardService]
+   canActivate:[ModelG]
   },
   {
     path:"loginnew",
