@@ -58,8 +58,9 @@ import { OrderGuardService } from './order-guard.service';
 import { AuthhService } from './authh.service';
 import { ImagesComponent } from './images/images.component';
 import { MatCardModule } from '@angular/material/card';
+import { CourseComponent } from './course/course.component';
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
       HomeComponent,
       AboutComponent,
@@ -95,7 +96,8 @@ import { MatCardModule } from '@angular/material/card';
       AdminpagedashboardComponent,
       FilterPipe,
       FilterationnewComponent,
-      ImagesComponent
+      ImagesComponent,
+      CourseComponent
    ],
   imports: [
     BrowserModule,
