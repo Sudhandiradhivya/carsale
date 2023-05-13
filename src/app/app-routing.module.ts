@@ -30,11 +30,9 @@ import { AdminpageheaderComponent } from './adminpageheader/adminpageheader.comp
 import { AdminpagedashboardComponent } from './Adminpagedashboard/Adminpagedashboard.component';
 import { OrderGuardService } from './order-guard.service';
 import { ImagesComponent } from './images/images.component';
+import { ModelGuard } from './model.guard';
 const routes: Routes = [
-  // {
-  //   path:"",
-  //   component:HomeComponent
-  // },
+ 
   {
     path:"Home",
     component:HomeComponent
@@ -57,7 +55,7 @@ const routes: Routes = [
   {
     path:"Models",
     component:ModelsComponent,
-   canActivate:[ModelG]
+   canActivate:[ModelGuard]
   },
   {
     path:"loginnew",
@@ -99,10 +97,6 @@ const routes: Routes = [
     path:"AngularRegister",
     component:AngularRegisterComponent
   },
-  // {
-  //   path:"",
-  //   component:AboutComponent
-  // },
   {
     path: 'Details',
     component:DetailsComponent
