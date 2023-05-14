@@ -37,6 +37,7 @@
 footer{
   margin-top: 10%;
   background-color: rgb(122, 171, 245);
+  padding: 10px;
 }
 .footer .companyLogo1 {
    margin-left: 46%;
@@ -57,17 +58,11 @@ padding-top: 10px;
   content: " ";
   width:90%;
   height: 2px;
-
-  bottom: 50%;
   border: none;
   border-top: 1px dotted rgb(65, 63, 64);
-margin-top: -11%;
-
-  /* opacity: .4; */
-
-  top: 150%;
- margin-left: -40%;
- position: absolute;
+  margin-top: 3%;
+  margin-left: -43%;
+  position: absolute;
 
 }
 .footer .grid-columns{
@@ -137,7 +132,7 @@ margin-top: -11%;
   bottom: 50%;
   border: none;
   border-top: 1px dotted rgb(214, 8, 180);
-margin-top: -11%;
+margin-top: 18%;
 
   /* opacity: .4; */
 
