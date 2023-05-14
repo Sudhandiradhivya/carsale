@@ -56,14 +56,13 @@ padding-top: 10px;
 }
 .underline::after{
   content: " ";
-  width:90%;
+  width:94%;
   height: 2px;
   border: none;
   border-top: 1px dotted rgb(65, 63, 64);
-  margin-top: 3%;
-  margin-left: -43%;
+  margin-top:1%;
+  margin-left:-43%;
   position: absolute;
-
 }
 .footer .grid-columns{
   display: grid;
@@ -80,16 +79,14 @@ padding-top: 10px;
   font-weight: 600;
 }
 .grid-columns p{
-  /* margin-left: 20px; */
   padding: 10px 0;
   line-height: 1.7;
   font-family: poppins;
   font-size: 15px;
  text-align:center;
-
 }
 .links{
- margin-top: 20px;
+ margin-top: 28px;
  padding: 0 10px;
  margin-left: 150px;
 }
@@ -101,17 +98,14 @@ padding-top: 10px;
   color: black;
   font-family: poppins;
   margin-top: 10%;
-
   font-size: 15px;
-
 }
 .contents{
   display: grid;
- grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3,1fr);
 }
 .content-1{
   display: grid;
-
 }
 .content-2{
   display: grid;
@@ -127,17 +121,12 @@ padding-top: 10px;
 .underline1::after{
   content: " ";
   width:90%;
-  height: 2px;
-
-  bottom: 50%;
-  border: none;
-  border-top: 1px dotted rgb(214, 8, 180);
-margin-top: 18%;
-
-  /* opacity: .4; */
-
+  height:2px;
+  bottom:50%;
+  border:none;
+  border-top:1px dotted rgb(214, 8, 180);
+  margin-top:18%;
   top: 190%;
- margin-left: -40%;
- position: absolute;
-
+  margin-left:-40%;
+  position:absolute;
 }

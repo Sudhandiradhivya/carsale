@@ -177,11 +177,9 @@ display: flex;
   content: " ";
   width:35%;
   height: 2px;
-
   bottom: 50%;
   border: none;
   border-top: 1px dotted rgb(85, 87, 85);
-
   margin-left: -9%;
   opacity: .4;
   position:absolute;
