@@ -54,13 +54,13 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule}from'@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
-import { OrderGuardService } from './order-guard.service';
-import { AuthhService } from './authh.service';
 import { ImagesComponent } from './images/images.component';
 import { MatCardModule } from '@angular/material/card';
 import { CourseComponent } from './course/course.component';
+import { ModelGuard } from './model.guard';
+import { ModellingService } from './modelling.service';
 @NgModule({
-  declarations: [	
+  declarations: [
     AppComponent,
       HomeComponent,
       AboutComponent,
@@ -115,11 +115,11 @@ import { CourseComponent } from './course/course.component';
     MatButtonModule,
     MatIconModule,
     MatCardModule,
-   
+
 
 
   ],
-  providers: [DeactivateGuard,OrderGuardService,AuthhService],
+  providers: [DeactivateGuard,ModelGuard,ModellingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

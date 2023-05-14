@@ -20,7 +20,6 @@ import { CartComponent } from './cart/cart.component';
 import { ModelsregisterComponent } from './Modelsregister/Modelsregister.component';
 import { AngularRegisterComponent } from './Angular-register/Angular-register.component';
 import { DetailsComponent } from './details/details.component';
-import { AuthendGuard } from './authend.guard';
 import { AdminHomePageComponent } from './AdminHomePage/AdminHomePage.component';
 import { LoginDetailsComponent } from './loginDetails/loginDetails.component';
 import { OrderDetailsComponent } from './OrderDetails/OrderDetails.component';
@@ -28,11 +27,10 @@ import { ServiceDetailsComponent } from './serviceDetails/serviceDetails.compone
 import { UserscomponentComponent } from './userscomponent/userscomponent.component';
 import { AdminpageheaderComponent } from './adminpageheader/adminpageheader.component';
 import { AdminpagedashboardComponent } from './Adminpagedashboard/Adminpagedashboard.component';
-import { OrderGuardService } from './order-guard.service';
 import { ImagesComponent } from './images/images.component';
 import { ModelGuard } from './model.guard';
 const routes: Routes = [
- 
+
   {
     path:"Home",
     component:HomeComponent
@@ -42,15 +40,10 @@ const routes: Routes = [
     component:AboutComponent,
 
   },
-  // {
-  //    path:"Register",
-  //    component:RegisterComponent,
-  //    canDeactivate:[DeactivateGuard]
-  // },
   {
    path:"Service",
    component:ServiceComponent,
-  //  canActivate:[AuthendGuard]
+  
   },
   {
     path:"Models",

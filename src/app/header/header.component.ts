@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthhService } from '../authh.service';
+
 
 @Component({
   selector: 'app-header',
@@ -9,14 +9,14 @@ import { AuthhService } from '../authh.service';
 export class HeaderComponent implements OnInit {
   loginForms: any;
 
-  constructor(private authhService:AuthhService) { }
+  constructor() { }
 
   ngOnInit() {
   }
-  loggedin(){
-    return (this.loginForms.valid);
-  }
-  login(){
-    this.authhService.login();
-  }
+  // loggedin(){
+  //   return (this.loginForms.valid);
+  // }
+  // login(){
+  //   this.authhService.login();
+  // }
 }
