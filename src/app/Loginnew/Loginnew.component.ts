@@ -11,16 +11,11 @@ import { ModellingService } from '../modelling.service';
   styleUrls: ['./Loginnew.component.css']
 })
 export class LoginnewComponent {
-  [x: string]: any;
-  usersuccess=false;
+  // [x: string]: any;
+  // usersuccess=false;
   constructor(private formBuilder:FormBuilder,private https:HttpClient,private route:Router, private service:LoginService,private modellingservice:ModellingService) {
-    this.usersuccess=Boolean(sessionStorage.getItem("usersuccess" ))||this.modellingservice.userlogin
    }
-   logout(){
-    this.modellingservice.userlogin=false;
-    this.usersuccess=false;
-    sessionStorage.clear();
-  }
+
  loginForms=this.formBuilder.group({
   username:[,[Validators.required,Validators.pattern('^([a-zA-Z0-9.-]+)@([a-z0-9-]+).([a-z]{2,8})(.[a-z]{2,8})$')]],
   password:[,[Validators.required,Validators.pattern('^[A-Z]{1}[a-z]+[@/!/#/$/%/&][0-9]{2,4}$')]]
@@ -43,7 +38,8 @@ user(){
 
       if(users){
         alert("Login Successfully");
-        sessionStorage.setItem('userlogin','true');
+        sessionStorage.setItem('usersuccess','true');
+        this.modellingservice.userlogin=true;
         this.route.navigate(['Home'])
       }
       else{

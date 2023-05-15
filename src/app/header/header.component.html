@@ -18,10 +18,10 @@
 
         </ul>
         <div class="subnav">
-          <a routerLink="/loginnew" *ngIf="!userlogin">Login </a>
+          <a routerLink="/loginnew" *ngIf="!usersuccess">Login </a>
         </div>
         <div class="subnav" id="logout" style="cursor: pointer;">
-          <a *ngIf="userlogin" (click)="logout()">Logout</a>
+          <a *ngIf="usersuccess" (click)="logout()">Logout</a>
         </div>
 
       </div>

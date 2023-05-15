@@ -9,17 +9,23 @@ import { ModellingService } from '../modelling.service';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  loginForms: any;
-  userlogin:any;
-  constructor(private route:Router,private modellingService:ModellingService) { }
+  // loginForms: any;
+  // userlogin:any;
+  usersuccess=false;
+  constructor(private route:Router,private modellingService:ModellingService) {
+    this.usersuccess=Boolean(sessionStorage.getItem("usersuccess"))||this.modellingService.userlogin
+   }
 
   ngOnInit() {
-     this.userlogin=sessionStorage.getItem('userlogin');
+    
   }
 
   logout(){
+    this.modellingService.userlogin=false;
+    this.usersuccess=false;
     sessionStorage.clear();
-    this.userlogin=false;
+
     this.route.navigate(['Home']);
+
   }
 }
