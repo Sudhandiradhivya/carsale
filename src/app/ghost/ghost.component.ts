@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
+import { ModelsregisterComponent } from '../Modelsregister/Modelsregister.component';
 
 @Component({
   selector: 'app-ghost',
@@ -7,7 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GhostComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(private dialog:MatDialog) { }
 
   ngOnInit() {
   }
@@ -23,5 +26,9 @@ export class GhostComponent implements OnInit {
   ghost(event: any){
       this.content = event.target.src;
   }
-  
+  openDialog() {
+    this.dialog.open(ModelsregisterComponent, {
+      width:'30%'
+    });
+  }
 }

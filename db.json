@@ -64,13 +64,6 @@
       "id": 13
     },
     {
-      "username": "Dhivya",
-      "email": "r@gmail.com",
-      "password": "Hari@77",
-      "confirmPassword": "Hari@77",
-      "id": 14
-    },
-    {
       "username": "dharan",
       "email": "pdharan@gmail.com",
       "password": "Pk@12",
@@ -205,15 +198,15 @@
   "adminDetails": [
     {
       "aemail": "admin1@gmail.com",
-      "apassword": "Admin1@123"
+      "apassword": "Admin@123"
     },
     {
       "aemail": "admin2@gmail.com",
-      "apassword": "Admin2@123"
+      "apassword": "Admin@123"
     },
     {
       "aemail": "admin3@gmail.com",
-      "apassword": "Admin3@123"
+      "apassword": "Admin@123"
     }
   ],
   "Modelsregister": [

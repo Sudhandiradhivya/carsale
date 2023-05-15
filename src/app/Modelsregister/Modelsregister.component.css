@@ -1,31 +1,31 @@
-*{
+/* *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* position:relative; */
 }
 body{
-width: 70%;
-height: 150vh;
-border-radius: 20px;
+width: 40%;
+height: 120vh;
+
 border: none;
 box-shadow: -1px -1px 14px 2px rgba(129, 123, 123, 0.75);
 background: transparent;
-margin-left:18%;
-/* position: relative; */
+margin-left:25%;
+
 }
 
 
 
 h1{
 margin: 0;
-margin-left:29%;
-margin-top: 2%;
-font-size: 50px;
+margin-left:20%;
+margin-top: 5%;
+font-size: 28px;
+font-family: poppins;
 color: rgb(16, 15, 15);
 font-weight: 200;
-letter-spacing: 4px;
-padding: 80px 0 0 0;
+letter-spacing: 3px;
+padding: 10px 0;
 }
 .btn{
   display: grid;
@@ -57,15 +57,7 @@ position: absolute;
   margin-left:83%;
 
   }
-/* .butt2{
 
-margin-left:31%;
-}
-.butt3{
-margin-top: -3%;
-margin-left:55%;
-
-} */
 a{
 text-decoration: none;
 color: rgb(20, 19, 19);
@@ -73,18 +65,18 @@ font-size: 15px;
 }
 .input-group{
 font-size: 30px;
-margin-top: 90px;
-margin-left: 30%;
+margin-top: 40px;
+margin-left: 10%;
 color: rgb(9, 9, 9);
 
 }
 .input-group input{
-width:50%;
+width:70%;
 height: 50px;
 padding: 10px;
 margin: 20px;
 border-bottom:5px 3px rgb(48, 47, 47);
-/* border: none; */
+
 outline: none;
 background:transparent;
 font-size: 15px;
@@ -96,16 +88,16 @@ border-bottom: 2px solid rgb(93, 91, 91);
 color: rgb(13, 12, 12);
 }
 .inputs1 input{
-width: 50%;
+width: 60%;
 height: 70px;
 }
 .inputs select{
-width: 50%;
+width: 60%;
 height: 50px;
 margin: 20px;
 padding: 9px;
 border-bottom:1px solid rgb(214, 205, 205);
-/* border: none; */
+
 outline: none;
 background:transparent;
 font-size: 15px;
@@ -130,4 +122,50 @@ input[type=submit]{
   }
   input[type=submit]:hover{
     background-color: rgb(165, 165, 217);
+  } */
+  h1{
+    margin: 0;
+    margin-left:20%;
+    margin-top: 1%;
+    font-size: 18px;
+    font-family: poppins;
+    color: rgb(16, 15, 15);
+    font-weight: 800;
+    letter-spacing: 3px;
+    padding: 10px 10px;
+    }
+.input-group{
+  background-color: blue;
+  margin-left: 50px;
+  height: 200px;
+
+}
+.inputs select{
+  width: 60%;
+  height: 20px;
+  margin: 20px;
+  padding: 9px;
+  border-bottom:1px solid rgb(214, 205, 205);
+
+  outline: none;
+  background:transparent;
+  font-size: 15px;
+  color: rgb(7, 7, 7);
   }
+  .inputs1 input{
+    width: 60%;
+    height: 30px;
+    padding: 9px;
+    }
+    .input-group input{
+      width:53%;
+      height: 20px;
+      margin-left: 30px;
+
+      border-bottom:5px 3px rgb(48, 47, 47);
+
+      outline: none;
+      background:transparent;
+      font-size: 15px;
+      color: rgb(23, 22, 22);
+      }

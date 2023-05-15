@@ -59,6 +59,7 @@ import { MatCardModule } from '@angular/material/card';
 import { CourseComponent } from './course/course.component';
 import { ModelGuard } from './model.guard';
 import { ModellingService } from './modelling.service';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 @NgModule({
   declarations: [
     AppComponent,
@@ -115,7 +116,7 @@ import { ModellingService } from './modelling.service';
     MatButtonModule,
     MatIconModule,
     MatCardModule,
-
+    MatDialogModule
 
 
   ],

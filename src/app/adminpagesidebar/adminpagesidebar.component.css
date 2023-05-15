@@ -56,7 +56,10 @@
   background:#f8f8fb;
   border-radius: 5px;
 }
-
+.sidebar .side-menu:hover a{
+  color: rgb(68, 191, 225);
+  
+}
 
 
 
