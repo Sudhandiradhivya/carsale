@@ -3,6 +3,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 import{HttpClient} from '@angular/common/http';
 import { Router } from '@angular/router';
 import { LoginService } from '../login.service';
+import { ModellingService } from '../modelling.service';
 
 @Component({
   selector: 'app-Loginnew',
@@ -11,8 +12,15 @@ import { LoginService } from '../login.service';
 })
 export class LoginnewComponent {
   [x: string]: any;
-
-  constructor(private formBuilder:FormBuilder,private https:HttpClient,private route:Router, private service:LoginService) { }
+  usersuccess=false;
+  constructor(private formBuilder:FormBuilder,private https:HttpClient,private route:Router, private service:LoginService,private modellingservice:ModellingService) {
+    this.usersuccess=Boolean(sessionStorage.getItem("usersuccess" ))||this.modellingservice.userlogin
+   }
+   logout(){
+    this.modellingservice.userlogin=false;
+    this.usersuccess=false;
+    sessionStorage.clear();
+  }
  loginForms=this.formBuilder.group({
   username:[,[Validators.required,Validators.pattern('^([a-zA-Z0-9.-]+)@([a-z0-9-]+).([a-z]{2,8})(.[a-z]{2,8})$')]],
   password:[,[Validators.required,Validators.pattern('^[A-Z]{1}[a-z]+[@/!/#/$/%/&][0-9]{2,4}$')]]

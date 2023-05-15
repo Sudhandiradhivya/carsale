@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ModellingService } from '../modelling.service';
 
 
 @Component({
@@ -10,17 +11,12 @@ import { Router } from '@angular/router';
 export class HeaderComponent implements OnInit {
   loginForms: any;
   userlogin:any;
-  constructor(private route:Router) { }
+  constructor(private route:Router,private modellingService:ModellingService) { }
 
   ngOnInit() {
      this.userlogin=sessionStorage.getItem('userlogin');
   }
-  // loggedin(){
-  //   return (this.loginForms.valid);
-  // }
-  // login(){
-  //   this.authhService.login();
-  // }
+
   logout(){
     sessionStorage.clear();
     this.userlogin=false;

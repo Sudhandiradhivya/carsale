@@ -3,7 +3,7 @@
     <div class="main">
 
       <div class="logo">
-        <img src="../../assets/Rolls Royce Logo.png" width="160px" height="100px" alt="img" />
+        <img src="../../assets/Rolls Royce Logo.png" width="160px" height="80px" alt="img" />
       </div>
 
 
@@ -18,9 +18,10 @@
 
         </ul>
         <div class="subnav">
-          <a routerLink="/loginnew" *ngIf="!userlogin">Login </a>
+          <a routerLink="/loginnew" *ngIf="!userloginkm
+           ">Login </a>
         </div>
-        <div class="subnav" >
+        <div class="subnav" id="logout" style="cursor: pointer;">
           <a *ngIf="userlogin" (click)="logout()">Logout</a>
         </div>
 

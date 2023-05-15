@@ -10,7 +10,7 @@ export class ModelGuard implements CanActivate{
   constructor(private modellingService:ModellingService,private route:Router){ }
   canActivate()
     {
-      if(this.modellingService.isUserLoggedIn){
+      if(sessionStorage.getItem("usersuccess")){
         return true;
       }
       else{
