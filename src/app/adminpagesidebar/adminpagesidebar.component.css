@@ -52,8 +52,8 @@
   margin-left: 10px;
 }
 .sidebar .side-menu:hover{
-  color: rgb(10, 148, 234);
-  background-color:#f8f8fb;
+  color: rgb(68, 191, 225);
+  background:#f8f8fb;
   border-radius: 5px;
 }
 
@@ -118,7 +118,7 @@ h3{
   font-size: 23px;
   font-family: poppins;
   font-weight: 600;
- 
+
 }
 .container i{
   color: rgb(80, 170, 226);

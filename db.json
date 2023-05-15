@@ -69,6 +69,13 @@
       "password": "Hari@77",
       "confirmPassword": "Hari@77",
       "id": 14
+    },
+    {
+      "username": "dharan",
+      "email": "pdharan@gmail.com",
+      "password": "Pk@12",
+      "confirmPassword": "Pk@12",
+      "id": 15
     }
   ],
   "products": [

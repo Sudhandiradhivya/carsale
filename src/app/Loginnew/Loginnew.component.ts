@@ -35,6 +35,7 @@ user(){
 
       if(users){
         alert("Login Successfully");
+        sessionStorage.setItem('userlogin','true');
         this.route.navigate(['Home'])
       }
       else{
@@ -51,6 +52,7 @@ admin(){
   this.https.get<any>("http://localhost:3000/adminDetails").subscribe(res=>{
     const admin=res.find((a:any)=>{
       return a.aemail===this.loginForms.value.username && a.apassword===this.loginForms.value.password
+
     });
 
     if(admin){

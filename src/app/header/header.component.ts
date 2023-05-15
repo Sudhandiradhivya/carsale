@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -8,10 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   loginForms: any;
-
-  constructor() { }
+  userlogin:any;
+  constructor(private route:Router) { }
 
   ngOnInit() {
+     this.userlogin=sessionStorage.getItem('userlogin');
   }
   // loggedin(){
   //   return (this.loginForms.valid);
@@ -19,4 +21,9 @@ export class HeaderComponent implements OnInit {
   // login(){
   //   this.authhService.login();
   // }
+  logout(){
+    sessionStorage.clear();
+    this.userlogin=false;
+    this.route.navigate(['Home']);
+  }
 }

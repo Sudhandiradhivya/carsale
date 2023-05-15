@@ -20,7 +20,7 @@
 
     <ng-container matColumnDef="username">
       <th mat-header-cell *matHeaderCellDef mat-sort-header> Username</th>
-      <td mat-cell *matCellDef="let row"> {{row.username}}</td>
+      <td mat-cell *matCellDef="let row"> {{row.username|uppercase}}</td>
     </ng-container>
 
 
@@ -29,7 +29,7 @@
       <td mat-cell *matCellDef="let row"> {{row.email}} </td>
     </ng-container>
 
-   
+
     <ng-container matColumnDef="password">
       <th mat-header-cell *matHeaderCellDef mat-sort-header> Password </th>
       <td mat-cell *matCellDef="let row"> {{row.password}} </td>

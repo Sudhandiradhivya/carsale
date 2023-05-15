@@ -26,8 +26,9 @@ finalData:any;
     })
   }
 
-  
+
   ngOnInit() {
   }
+  projectTitle=[{name:'Car Sale Management System'}]
 
 }

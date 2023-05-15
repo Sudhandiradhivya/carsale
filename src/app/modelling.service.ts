@@ -9,7 +9,7 @@ export class ModellingService {
   get isUserLoggedIn(){
     return true;
   }
-  get isUserRole(){
-    return true;
-  }
+  // get isUserRole(){
+  //   return true;
+  // }
 }
