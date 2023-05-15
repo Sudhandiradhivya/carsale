@@ -69,6 +69,13 @@
       "password": "Priya@14",
       "confirmPassword": "Priya@14",
       "id": 13
+    },
+    {
+      "username": "Dhivya",
+      "email": "r@gmail.com",
+      "password": "Hari@77",
+      "confirmPassword": "Hari@77",
+      "id": 14
     }
   ],
   "products": [
@@ -185,6 +192,14 @@
       "branch": "Namakkal",
       "service": "Light and Accessories",
       "id": 9
+    },
+    {
+      "custId": 4567,
+      "vehicleNumber": "TV-7865",
+      "mileage": 678,
+      "branch": "cunoor",
+      "service": "Exhaust System",
+      "id": 10
     }
   ],
   "adminDetails": [
@@ -237,6 +252,15 @@
       "phonenumber": "3263424",
       "email": "lkjfoieuo@gmail",
       "id": 7
+    },
+    {
+      "models": "Cullinan",
+      "Title": "Mr",
+      "fname": "kumar",
+      "lname": "s",
+      "phonenumber": null,
+      "email": null,
+      "id": 8
     }
   ],
   "Images": [
