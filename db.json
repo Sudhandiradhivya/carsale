@@ -44,13 +44,6 @@
     },
     {
       "username": "dhivya",
-      "email": "dhivya4567890@gmail.com",
-      "password": "Sd@12",
-      "confirmPassword": "Sd@12",
-      "id": 9
-    },
-    {
-      "username": "dhivya",
       "email": "dhivya456@gmail.com",
       "password": "Kd@12",
       "confirmPassword": "Kd@12",
@@ -254,13 +247,13 @@
       "id": 7
     },
     {
-      "models": "Cullinan",
-      "Title": "Mr",
-      "fname": "kumar",
-      "lname": "s",
-      "phonenumber": null,
-      "email": null,
-      "id": 8
+      "models": "Phantom",
+      "Title": "Mrs",
+      "fname": "kumari",
+      "lname": "j",
+      "phonenumber": "67890543",
+      "email": "dksg@gmail.com",
+      "id": 9
     }
   ],
   "Images": [
