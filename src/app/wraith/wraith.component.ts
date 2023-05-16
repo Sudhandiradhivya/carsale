@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ModelsregisterComponent } from '../Modelsregister/Modelsregister.component';
 
 @Component({
   selector: 'app-wraith',
@@ -7,8 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WraithComponent implements OnInit {
 
-  
-  constructor() { }
+
+  constructor(private dialog:MatDialog) { }
 
   ngOnInit() {
   }
@@ -23,5 +25,11 @@ export class WraithComponent implements OnInit {
   content:string="../../assets/wr7-y.webp"
   ghost(event: any){
       this.content = event.target.src;
+  }
+  openDialog() {
+    this.dialog.open(ModelsregisterComponent, {
+      width:'35%',
+      height:'65%'
+    });
   }
 }

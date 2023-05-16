@@ -28,7 +28,8 @@ export class GhostComponent implements OnInit {
   }
   openDialog() {
     this.dialog.open(ModelsregisterComponent, {
-      width:'30%'
+      width:'35%',
+      height:'65%'
     });
   }
 }

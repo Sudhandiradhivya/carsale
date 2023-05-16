@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ModelsregisterComponent } from '../Modelsregister/Modelsregister.component';
 
 @Component({
   selector: 'app-dawn',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DawnComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dialog:MatDialog) { }
 
   ngOnInit() {
   }
@@ -23,5 +25,10 @@ export class DawnComponent implements OnInit {
   ghost(event: any){
       this.content = event.target.src;
   }
-  
+  openDialog() {
+    this.dialog.open(ModelsregisterComponent, {
+      width:'35%',
+      height:'65%'
+    });
+  }
 }

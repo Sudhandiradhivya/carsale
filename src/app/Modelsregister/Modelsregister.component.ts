@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { ServiceService } from '../service.service';
 import { Router } from '@angular/router';
-
+import { MatDialogRef } from '@angular/material/dialog';
 @Component({
   selector: 'app-Modelsregister',
   templateUrl: './Modelsregister.component.html',
@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class ModelsregisterComponent implements OnInit {
   register: any;
-
+retUrl:any;
   constructor(private fb:FormBuilder, private service:ServiceService,private route:Router) { }
    OrdersForm=this.fb.group({
     models:[,[Validators.required]],
@@ -25,6 +25,7 @@ export class ModelsregisterComponent implements OnInit {
       this.service.postOrderDetails(this.OrdersForm.value).subscribe((data: any)=>{
       alert('Form Submitted');
       this.OrdersForm.reset();
+      
     })
 
     }

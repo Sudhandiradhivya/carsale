@@ -135,32 +135,30 @@ input[type=submit]{
     padding: 10px 10px;
     }
 .input-group{
-  background-color: blue;
+
   margin-left: 50px;
   height: 200px;
-
+  color: rgb(9, 9, 9);
 }
-.inputs select{
-  width: 60%;
+.input-group .inputs select{
+  width: 61%;
   height: 20px;
   margin: 20px;
-  padding: 9px;
   border-bottom:1px solid rgb(214, 205, 205);
-
   outline: none;
   background:transparent;
   font-size: 15px;
   color: rgb(7, 7, 7);
   }
-  .inputs1 input{
-    width: 60%;
+ .inputs .inputs1 input{
+    width: 57%;
     height: 30px;
     padding: 9px;
     }
     .input-group input{
-      width:53%;
+      width:59%;
       height: 20px;
-      margin-left: 30px;
+      margin-left: 19px;
 
       border-bottom:5px 3px rgb(48, 47, 47);
 
@@ -168,4 +166,6 @@ input[type=submit]{
       background:transparent;
       font-size: 15px;
       color: rgb(23, 22, 22);
+      margin-top: 9px;
+      padding: 4px;
       }

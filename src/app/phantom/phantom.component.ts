@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ModelsregisterComponent } from '../Modelsregister/Modelsregister.component';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-phantom',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PhantomComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dialog:MatDialog) { }
 
   ngOnInit() {
   }
@@ -15,7 +17,7 @@ export class PhantomComponent implements OnInit {
   imageChange(event: any){
       this.url = event.target.src;
   }
-  
+
   image:string="../../assets/ph4-b.jpg"
   Change(event: any){
       this.image = event.target.src;
@@ -23,5 +25,11 @@ export class PhantomComponent implements OnInit {
   content:string="../../assets/ph7-w.jpg"
   ghost(event: any){
       this.content = event.target.src;
+  }
+  openDialog() {
+    this.dialog.open(ModelsregisterComponent, {
+      width:'35%',
+      height:'65%'
+    });
   }
 }

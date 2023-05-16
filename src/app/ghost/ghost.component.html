@@ -339,7 +339,7 @@
             <div class="card-main">
            <div class="discount">-20%</div>
            <div class="order order-color">
-            <a [routerLink]="'/Modelsregister'" class="preorder">Order</a></div>
+            <a  class="preorder" (click)="openDialog()">Order</a></div>
            <div class="product-container">
             <div class="p" (mouseover)="Change($event)"><img src="../../assets/g4-w.jpg" alt="product"></div>
             <div class="p" (mouseover)="Change($event)"><img src="../../assets/g5-w.png"  alt="product"></div>
@@ -376,7 +376,7 @@
             <div class="card-main">
            <div class="discount">-30%</div>
            <div class="order order-color">
-            <a [routerLink]="'/Modelsregister'" class="preorder"> Order</a>
+            <a  class="preorder" (click)="openDialog()"> Order</a>
           </div>
            <div class="product-container">
             <div class="p" (mouseover)="ghost($event)"><img src="../../assets/g7-b.png" alt="product"></div>

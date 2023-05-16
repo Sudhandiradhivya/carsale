@@ -69,6 +69,13 @@
       "password": "Pk@12",
       "confirmPassword": "Pk@12",
       "id": 15
+    },
+    {
+      "username": "Priya",
+      "email": "priya@gmail.com",
+      "password": "Priya@34",
+      "confirmPassword": "Priya@34",
+      "id": 16
     }
   ],
   "products": [
@@ -263,6 +270,33 @@
       "phonenumber": "7865453921",
       "email": "bas@gmail.com",
       "id": 10
+    },
+    {
+      "models": "Cullinan",
+      "Title": "Mrs",
+      "fname": "vishnu",
+      "lname": "k",
+      "phonenumber": "07865453921",
+      "email": "bas@gmail.com",
+      "id": 11
+    },
+    {
+      "models": "Phantom",
+      "Title": "Mrs",
+      "fname": "saru",
+      "lname": "m",
+      "phonenumber": "656789089",
+      "email": "bas@gmail.com",
+      "id": 12
+    },
+    {
+      "models": "Phantom",
+      "Title": "Mrs",
+      "fname": "thilaga",
+      "lname": "d",
+      "phonenumber": "67895432",
+      "email": "thilak@gmail.com",
+      "id": 13
     }
   ],
   "Images": [
