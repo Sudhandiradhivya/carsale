@@ -76,6 +76,13 @@
       "password": "Priya@34",
       "confirmPassword": "Priya@34",
       "id": 16
+    },
+    {
+      "username": "dhivya",
+      "email": "monish@gmail.com",
+      "password": "Kmona@23",
+      "confirmPassword": "Kmona@23",
+      "id": 17
     }
   ],
   "products": [

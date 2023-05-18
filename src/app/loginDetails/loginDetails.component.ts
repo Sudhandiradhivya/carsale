@@ -15,11 +15,7 @@ export class LoginDetailsComponent implements OnInit {
         return this.getLogin=value;
     })
   }
-  
-  // @Input() all:number=0;
 
-  // getloginValue(){
-  //   return this.getLogin.length;
-  // }
+  
 
 }
