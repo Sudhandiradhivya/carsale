@@ -17,7 +17,7 @@ export class HeaderComponent implements OnInit {
    }
 
   ngOnInit() {
-    
+
   }
 
   logout(){
@@ -28,4 +28,5 @@ export class HeaderComponent implements OnInit {
     this.route.navigate(['Home']);
 
   }
+  
 }

@@ -43,7 +43,7 @@
 <ng-container matColumnDef="action">
   <th mat-header-cell *matHeaderCellDef mat-sort-header>Action</th>
   <td mat-cell *matCellDef="let row">
-  <button mat-icon-button color="warn" aria-label="Example icon button with a heart icon">
+  <button mat-icon-button color="warn" aria-label="Example icon button with a heart icon" (click)="open(row)" >
     <mat-icon>favorite</mat-icon>
   </button>
   <button mat-icon-button color="primary" (click)="deleteOrder(row.id)">

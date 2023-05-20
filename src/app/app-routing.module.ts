@@ -29,6 +29,7 @@ import { AdminpageheaderComponent } from './adminpageheader/adminpageheader.comp
 import { AdminpagedashboardComponent } from './Adminpagedashboard/Adminpagedashboard.component';
 import { ImagesComponent } from './images/images.component';
 import { ModelGuard } from './model.guard';
+import { ViewDetailsComponent } from './view-details/view-details.component';
 const routes: Routes = [
 
   {
@@ -43,7 +44,7 @@ const routes: Routes = [
   {
    path:"Service",
    component:ServiceComponent,
-  
+
   },
   {
     path:"Models",
@@ -126,6 +127,10 @@ const routes: Routes = [
   {
     path:"images",
     component:ImagesComponent
+  },
+  {
+    path:"viewdetails",
+    component:ViewDetailsComponent
   },
   {
     path:"**",

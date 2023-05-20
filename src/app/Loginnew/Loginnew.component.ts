@@ -38,6 +38,7 @@ user(){
 
       if(users){
         alert("Login Successfully");
+        sessionStorage.setItem('user',JSON.stringify(users));
         sessionStorage.setItem('usersuccess','true');
         this.modellingservice.userlogin=true;
         this.route.navigate(['Home'])

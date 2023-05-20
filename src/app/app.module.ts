@@ -60,8 +60,9 @@ import { CourseComponent } from './course/course.component';
 import { ModelGuard } from './model.guard';
 import { ModellingService } from './modelling.service';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import { ViewDetailsComponent } from './view-details/view-details.component';
 @NgModule({
-  declarations: [
+  declarations: [	
     AppComponent,
       HomeComponent,
       AboutComponent,
@@ -98,7 +99,8 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
       FilterPipe,
       FilterationnewComponent,
       ImagesComponent,
-      CourseComponent
+      CourseComponent,
+      ViewDetailsComponent
    ],
   imports: [
     BrowserModule,

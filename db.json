@@ -83,6 +83,20 @@
       "password": "Kmona@23",
       "confirmPassword": "Kmona@23",
       "id": 17
+    },
+    {
+      "username": "vimal",
+      "email": "vimal@gmail.com",
+      "password": "Vimal@23",
+      "confirmPassword": "Vimal@23",
+      "id": 18
+    },
+    {
+      "username": "Kumar",
+      "email": "kumars@gmail.com",
+      "password": "Kumar@23",
+      "confirmPassword": "Kumar@23",
+      "id": 19
     }
   ],
   "products": [
@@ -304,6 +318,24 @@
       "phonenumber": "67895432",
       "email": "thilak@gmail.com",
       "id": 13
+    },
+    {
+      "models": "Phantom",
+      "Title": "Mrs",
+      "fname": "saru",
+      "lname": "m",
+      "phonenumber": "656789089",
+      "email": "bas@gmail.com",
+      "id": 14
+    },
+    {
+      "models": "Phantom",
+      "Title": "Cheif",
+      "fname": "dhamu",
+      "lname": "b",
+      "phonenumber": "656789089",
+      "email": "bas@gmail.com",
+      "id": 15
     }
   ],
   "Images": [
@@ -480,6 +512,48 @@
       "parah": "I have been driving this beauty since 2015, and not gonna lie, this car feels Royal. A must buy for a decent budget customer. ",
       "name": "By Agnivesh Sen",
       "views": "On: Jan 09, 2021 | 161 Views"
+    }
+  ],
+  "OrderAcceptedDetails": [
+    {
+      "fname": "sugan",
+      "lname": "B",
+      "mobile": "9875459294009",
+      "email": "sboopathi@gmail.com",
+      "status": "Order Accepted",
+      "id": 1
+    },
+    {
+      "fname": "kumari",
+      "lname": "j",
+      "mobile": "67890543",
+      "email": "dksg@gmail.com",
+      "status": "Order Accepted",
+      "id": 2
+    },
+    {
+      "fname": "sugan",
+      "lname": "B",
+      "mobile": "9875459294009",
+      "email": "sboopathi@gmail.com",
+      "status": "Order Accepted",
+      "id": 3
+    },
+    {
+      "fname": "dhamu",
+      "lname": "b",
+      "mobile": "656789089",
+      "email": "bas@gmail.com",
+      "status": "Order Accepted",
+      "id": 4
+    },
+    {
+      "fname": "dhamu",
+      "lname": "b",
+      "mobile": "656789089",
+      "email": "bas@gmail.com",
+      "status": "Order Accepted",
+      "id": 5
     }
   ]
 }

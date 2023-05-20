@@ -3,6 +3,7 @@ import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
 import { DetailServiceService } from '../detailService.service';
+import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-OrderDetails',
   templateUrl: './OrderDetails.component.html',
@@ -17,7 +18,7 @@ export class OrderDetailsComponent implements OnInit {
   @ViewChild(MatSort) sort!: MatSort;
   DetailService: any;
 
-  constructor(private service:DetailServiceService) { }
+  constructor(private service:DetailServiceService,private http:HttpClient) { }
   getLoginvalue:any=" ";
    ngOnInit() {
      this.getOrderList();
@@ -50,7 +51,19 @@ export class OrderDetailsComponent implements OnInit {
    })
   }
 
-
+open(value:any){
+  var body={
+    "fname":value.fname,
+    "lname":value.lname,
+    "mobile":value.phonenumber,
+    "email":value.email,
+    "status":"Order Accepted"
+  }
+  this.http.post<any>("http://localhost:3000/OrderAcceptedDetails",body).subscribe(()=>{
+    
+    alert("Updated DB successfull");
+  })
+}
 
 
 }
