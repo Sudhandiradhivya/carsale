@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
 @Component({
   selector: 'app-view-details',
@@ -18,12 +19,21 @@ acceptdetails:any="";
 
     }
     this.http.get<any>("http://localhost:3000/OrderAcceptedDetails").subscribe((data)=>{
-const values=data.find((b:any))
-    })
-    this.http.get<any>("http://localhost:3000/OrderAcceptedDetails/"+this.getlogged.id).subscribe((data)=>{
-this.acceptdetails=data;
-    })
+const values=data.find((b:any)=>
+{
+  return this.getlogged.email===b.email;
+})
+if(values){
+this.getId(values);
+}
+})
+
 
   }
+getId(values:any){
+  this.http.get<any>("http://localhost:3000/OrderAcceptedDetails/"+values.id).subscribe((data)=>{
+    this.acceptdetails=data;
+        });
+}
 
 }

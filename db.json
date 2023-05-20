@@ -50,13 +50,6 @@
       "id": 11
     },
     {
-      "username": "mona",
-      "email": "dhivya@gmail.com",
-      "password": "Priya@12",
-      "confirmPassword": "Priya@12",
-      "id": 12
-    },
-    {
       "username": "Prakash",
       "email": "priyaprakash@12gmail.com",
       "password": "Priya@14",
@@ -97,6 +90,20 @@
       "password": "Kumar@23",
       "confirmPassword": "Kumar@23",
       "id": 19
+    },
+    {
+      "username": "hariprasath",
+      "email": "harsha@gmail.com",
+      "password": "Harsh@23",
+      "confirmPassword": "Harsh@23",
+      "id": 20
+    },
+    {
+      "username": "rithika",
+      "email": "rithi@gmail.com",
+      "password": "Rithi@24",
+      "confirmPassword": "Rithi@24",
+      "id": 21
     }
   ],
   "products": [
@@ -336,6 +343,33 @@
       "phonenumber": "656789089",
       "email": "bas@gmail.com",
       "id": 15
+    },
+    {
+      "models": "Wraith",
+      "Title": "Mr",
+      "fname": "Hariprasath",
+      "lname": "v",
+      "phonenumber": "67864523",
+      "email": "harsha@gmail.com",
+      "id": 16
+    },
+    {
+      "models": "Ghost",
+      "Title": "Mr",
+      "fname": "DHARAN",
+      "lname": "p",
+      "phonenumber": "65467856",
+      "email": "pdharan@gmail.com",
+      "id": 17
+    },
+    {
+      "models": "Cullinan",
+      "Title": "Ms",
+      "fname": "rithi",
+      "lname": "k",
+      "phonenumber": "89674534",
+      "email": "rithi@gmail.com",
+      "id": 18
     }
   ],
   "Images": [
@@ -554,6 +588,46 @@
       "email": "bas@gmail.com",
       "status": "Order Accepted",
       "id": 5
+    },
+    {
+      "fname": "Hariprasath",
+      "lname": "v",
+      "mobile": "67864523",
+      "email": "harsha@gmail.com",
+      "status": "Order Accepted",
+      "id": 6
+    },
+    {
+      "fname": "prabhakaran",
+      "lname": "l",
+      "mobile": "1334949858",
+      "email": "kjdoiwr@gmail.com",
+      "status": "Order Accepted",
+      "id": 7
+    },
+    {
+      "fname": "kumari",
+      "lname": "j",
+      "mobile": "67890543",
+      "email": "dksg@gmail.com",
+      "status": "Order Accepted",
+      "id": 8
+    },
+    {
+      "fname": "DHARAN",
+      "lname": "p",
+      "mobile": "65467856",
+      "email": "pdharan@gmail.com",
+      "status": "Order Accepted",
+      "id": 9
+    },
+    {
+      "fname": "rithi",
+      "lname": "k",
+      "mobile": "89674534",
+      "email": "rithi@gmail.com",
+      "status": "Order Accepted",
+      "id": 10
     }
   ]
 }
