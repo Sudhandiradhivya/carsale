@@ -8,6 +8,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
   styleUrls: ['./view-details.component.css']
 })
 export class ViewDetailsComponent implements OnInit {
+values: any;
 
   constructor(private http:HttpClient) { }
 getlogged:any="";
