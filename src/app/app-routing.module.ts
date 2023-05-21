@@ -30,6 +30,7 @@ import { AdminpagedashboardComponent } from './Adminpagedashboard/Adminpagedashb
 import { ImagesComponent } from './images/images.component';
 import { ModelGuard } from './model.guard';
 import { ViewDetailsComponent } from './view-details/view-details.component';
+import { OrderAcceptedPageComponent } from './OrderAcceptedPage/OrderAcceptedPage.component';
 const routes: Routes = [
 
   {
@@ -131,6 +132,10 @@ const routes: Routes = [
   {
     path:"viewdetails",
     component:ViewDetailsComponent
+  },
+  {
+    path:"OrderAcceptPage",
+    component:OrderAcceptedPageComponent
   },
   {
     path:"**",

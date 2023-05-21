@@ -4,6 +4,9 @@ import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
 import { DetailServiceService } from '../detailService.service';
 import { HttpClient } from '@angular/common/http';
+import { MatDialog } from '@angular/material/dialog';
+import { ModelsregisterComponent } from '../Modelsregister/Modelsregister.component';
+import { OrderAcceptedPageComponent } from '../OrderAcceptedPage/OrderAcceptedPage.component';
 @Component({
   selector: 'app-OrderDetails',
   templateUrl: './OrderDetails.component.html',
@@ -18,7 +21,7 @@ export class OrderDetailsComponent implements OnInit {
   @ViewChild(MatSort) sort!: MatSort;
   DetailService: any;
 
-  constructor(private service:DetailServiceService,private http:HttpClient) { }
+  constructor(private service:DetailServiceService,private http:HttpClient,private dialog:MatDialog) { }
   getLoginvalue:any=" ";
    ngOnInit() {
      this.getOrderList();
@@ -60,10 +63,21 @@ open(value:any){
     "status":"Order Accepted"
   }
   this.http.post<any>("http://localhost:3000/OrderAcceptedDetails",body).subscribe(()=>{
-    
+
     alert("Updated DB successfull");
-  })
+      this.openDialog();
+  });
+
+}
+openDialog() {
+  this.dialog.open(OrderAcceptedPageComponent, {
+    width:'35%',
+    height:'65%'
+  });
 }
 
-
 }
+function openDialog() {
+  throw new Error('Function not implemented.');
+}
+

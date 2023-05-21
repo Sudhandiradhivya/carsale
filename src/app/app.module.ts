@@ -61,8 +61,9 @@ import { ModelGuard } from './model.guard';
 import { ModellingService } from './modelling.service';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { ViewDetailsComponent } from './view-details/view-details.component';
+import { OrderAcceptedPageComponent } from './OrderAcceptedPage/OrderAcceptedPage.component';
 @NgModule({
-  declarations: [	
+  declarations: [		
     AppComponent,
       HomeComponent,
       AboutComponent,
@@ -100,7 +101,8 @@ import { ViewDetailsComponent } from './view-details/view-details.component';
       FilterationnewComponent,
       ImagesComponent,
       CourseComponent,
-      ViewDetailsComponent
+      ViewDetailsComponent,
+      OrderAcceptedPageComponent
    ],
   imports: [
     BrowserModule,
