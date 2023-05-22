@@ -3,6 +3,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ServiceService } from '../service.service';
 import { HttpClient } from '@angular/common/http';
+import { DetailServiceService } from '../detailService.service';
 
 @Component({
   selector: 'app-OrderAcceptedPage',
@@ -14,16 +15,21 @@ export class OrderAcceptedPageComponent implements OnInit {
   register: any;
 retUrl:any;
   acceptdetails: any;
-  constructor(private fb:FormBuilder, private service:ServiceService,private route:Router,private http:HttpClient) { }
+  constructor(private fb:FormBuilder, private service:ServiceService,private route:Router,private http:HttpClient,private detailService:DetailServiceService) { }
    OrdersForm=this.fb.group({
-    models:[,[Validators.required]],
-    Title:[,[Validators.required]],
+
     fname:[,[Validators.required]],
     lname:[,[Validators.required]],
     phonenumber:[,[Validators.required]],
-    email:[,[Validators.required]]
+    email:[,[Validators.required]],
+    models:[,[Validators.required]],
+    amount:[,[Validators.required]]
   })
-  ngOnInit() {}
+  generate:any='';
+  ngOnInit() {
+    this.generate=this.detailService.billGenerate
+
+  }
   formRegister() {
       this.service.postOrderDetails(this.OrdersForm.value).subscribe((data: any)=>{
       alert('Form Submitted');
@@ -37,5 +43,13 @@ retUrl:any;
         this.acceptdetails=data;
             });
     }
+ orders(){
 
+  this.http.post<any>(" http://localhost:3000/GenanerateBills",this.OrdersForm.value).subscribe(()=>{
+
+    alert("Bill Generate successfull");
+    this.OrdersForm.reset();
+
+  });
+ }
 }

@@ -60,16 +60,18 @@ open(value:any){
     "lname":value.lname,
     "mobile":value.phonenumber,
     "email":value.email,
+    "model":value.models,
     "status":"Order Accepted"
   }
   this.http.post<any>("http://localhost:3000/OrderAcceptedDetails",body).subscribe(()=>{
 
     alert("Updated DB successfull");
-      this.openDialog();
+      this.openDialog(value);
   });
 
 }
-openDialog() {
+openDialog(value:any) {
+  this.service.billGenerate=value;
   this.dialog.open(OrderAcceptedPageComponent, {
     width:'35%',
     height:'65%'

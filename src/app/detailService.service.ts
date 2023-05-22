@@ -45,4 +45,5 @@ getNewsList():Observable<any>{
 getReviewList():Observable<any>{
  return this.http.get(' http://localhost:3000/Reviews ');
 }
+billGenerate:any;
 }
