@@ -1,22 +1,64 @@
-.project{
-  background-color:pink;
-  height: 60px;
+
+/* p{
+  margin-top: 260px;
+  padding: 30px;
+  margin-left: 28%;
+  background-color: blueviolet;
+  width: 1130px;
+} */
+.headline{
+  display: inline;
+
 }
-h1{
-  font-size: 24px;
-  font-family: poppins;
-  font-weight: 500;
-  margin-left: 40%;
+.headline button{
+  cursor: pointer;
 }
-.content{
-  background-color: rgb(174, 107, 237);
-  height: 100vh;
-  font-size: 18px;
-  font-family: poppins;
-  position: fixed;
-  width: 98.6%;
+table {
+  height: 200px;
+
 }
-.content p{
-  margin-left: 40%;
-margin-top: 20%;
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+td, th {
+  width: 5%;
+  font-size: 15px;
+}
+.main-body{
+ margin-top: 100px;
+margin-left: 5%;
+  padding: 20px;
+  width: 90%;
+
+  /* background-color: blue; */
+}
+mat-form-field{
+  width:100%;
+}
+.reviews{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.example-card {
+  max-width:300px;
+  margin: 10px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+.News-content{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+.headline button a
+{
+text-decoration: none;
+color: white;
 }

@@ -42,9 +42,13 @@ retUrl:any;
       this.http.get<any>("http://localhost:3000/OrderAcceptedDetails/"+values.id).subscribe((data)=>{
         this.acceptdetails=data;
             });
-    }
- orders(){
 
+    }
+
+ orders(){
+  this.http.get<any>("http://localhost:3000/OrderAcceptedDetails/").subscribe((data)=>{
+
+        });
   this.http.post<any>(" http://localhost:3000/GenanerateBills",this.OrdersForm.value).subscribe(()=>{
 
     alert("Bill Generate successfull");

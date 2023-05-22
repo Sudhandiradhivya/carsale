@@ -45,5 +45,9 @@ getNewsList():Observable<any>{
 getReviewList():Observable<any>{
  return this.http.get(' http://localhost:3000/Reviews ');
 }
+getExampleImage():Observable<any>{
+  return this.http.get(' http://localhost:3000/ExampleImages');
+}
 billGenerate:any;
+value:any;
 }

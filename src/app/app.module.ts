@@ -62,8 +62,9 @@ import { ModellingService } from './modelling.service';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { ViewDetailsComponent } from './view-details/view-details.component';
 import { OrderAcceptedPageComponent } from './OrderAcceptedPage/OrderAcceptedPage.component';
+import { ButtonfilterComponent } from './buttonfilter/buttonfilter.component';
 @NgModule({
-  declarations: [		
+  declarations: [			
     AppComponent,
       HomeComponent,
       AboutComponent,
@@ -102,7 +103,8 @@ import { OrderAcceptedPageComponent } from './OrderAcceptedPage/OrderAcceptedPag
       ImagesComponent,
       CourseComponent,
       ViewDetailsComponent,
-      OrderAcceptedPageComponent
+      OrderAcceptedPageComponent,
+      ButtonfilterComponent
    ],
   imports: [
     BrowserModule,
