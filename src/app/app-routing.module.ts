@@ -31,6 +31,7 @@ import { ImagesComponent } from './images/images.component';
 import { ModelGuard } from './model.guard';
 import { ViewDetailsComponent } from './view-details/view-details.component';
 import { OrderAcceptedPageComponent } from './OrderAcceptedPage/OrderAcceptedPage.component';
+import { ServiceAcceptedpageComponent } from './serviceAcceptedpage/serviceAcceptedpage.component';
 const routes: Routes = [
 
   {
@@ -136,6 +137,10 @@ const routes: Routes = [
   {
     path:"OrderAcceptPage",
     component:OrderAcceptedPageComponent
+  },
+  {
+    path:"ServiceAcceptedPage",
+    component:ServiceAcceptedpageComponent
   },
   {
     path:"**",

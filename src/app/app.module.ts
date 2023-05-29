@@ -63,8 +63,9 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { ViewDetailsComponent } from './view-details/view-details.component';
 import { OrderAcceptedPageComponent } from './OrderAcceptedPage/OrderAcceptedPage.component';
 import { ButtonfilterComponent } from './buttonfilter/buttonfilter.component';
+import { ServiceAcceptedpageComponent } from './serviceAcceptedpage/serviceAcceptedpage.component';
 @NgModule({
-  declarations: [			
+  declarations: [				
     AppComponent,
       HomeComponent,
       AboutComponent,
@@ -104,7 +105,8 @@ import { ButtonfilterComponent } from './buttonfilter/buttonfilter.component';
       CourseComponent,
       ViewDetailsComponent,
       OrderAcceptedPageComponent,
-      ButtonfilterComponent
+      ButtonfilterComponent,
+      ServiceAcceptedpageComponent
    ],
   imports: [
     BrowserModule,

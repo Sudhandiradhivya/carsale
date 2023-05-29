@@ -251,123 +251,6 @@
   ],
   "Modelsregister": [
     {
-      "models": "Phantom",
-      "Title": null,
-      "fname": "sugan",
-      "lname": "B",
-      "phonenumber": "9875459294009",
-      "email": "sboopathi@gmail.com",
-      "id": 4
-    },
-    {
-      "models": "Cullinan",
-      "Title": "Captain",
-      "fname": "prabhakaran",
-      "lname": "l",
-      "phonenumber": "1334949858",
-      "email": "kjdoiwr@gmail.com",
-      "id": 5
-    },
-    {
-      "models": "Cullinan",
-      "Title": "Captain",
-      "fname": "prabhakaran",
-      "lname": "l",
-      "phonenumber": "1334949858",
-      "email": "kjdoiwr@gmail.com",
-      "id": 6
-    },
-    {
-      "models": "Phantom",
-      "Title": "Mrs",
-      "fname": "lakshmi",
-      "lname": "R",
-      "phonenumber": "3263424",
-      "email": "lkjfoieuo@gmail",
-      "id": 7
-    },
-    {
-      "models": "Phantom",
-      "Title": "Mrs",
-      "fname": "kumari",
-      "lname": "j",
-      "phonenumber": "67890543",
-      "email": "dksg@gmail.com",
-      "id": 9
-    },
-    {
-      "models": "Phantom",
-      "Title": "Mrs",
-      "fname": "vishnu",
-      "lname": "k",
-      "phonenumber": "7865453921",
-      "email": "bas@gmail.com",
-      "id": 10
-    },
-    {
-      "models": "Cullinan",
-      "Title": "Mrs",
-      "fname": "vishnu",
-      "lname": "k",
-      "phonenumber": "07865453921",
-      "email": "bas@gmail.com",
-      "id": 11
-    },
-    {
-      "models": "Phantom",
-      "Title": "Mrs",
-      "fname": "saru",
-      "lname": "m",
-      "phonenumber": "656789089",
-      "email": "bas@gmail.com",
-      "id": 12
-    },
-    {
-      "models": "Phantom",
-      "Title": "Mrs",
-      "fname": "thilaga",
-      "lname": "d",
-      "phonenumber": "67895432",
-      "email": "thilak@gmail.com",
-      "id": 13
-    },
-    {
-      "models": "Phantom",
-      "Title": "Mrs",
-      "fname": "saru",
-      "lname": "m",
-      "phonenumber": "656789089",
-      "email": "bas@gmail.com",
-      "id": 14
-    },
-    {
-      "models": "Phantom",
-      "Title": "Cheif",
-      "fname": "dhamu",
-      "lname": "b",
-      "phonenumber": "656789089",
-      "email": "bas@gmail.com",
-      "id": 15
-    },
-    {
-      "models": "Wraith",
-      "Title": "Mr",
-      "fname": "Hariprasath",
-      "lname": "v",
-      "phonenumber": "67864523",
-      "email": "harsha@gmail.com",
-      "id": 16
-    },
-    {
-      "models": "Ghost",
-      "Title": "Mr",
-      "fname": "DHARAN",
-      "lname": "p",
-      "phonenumber": "65467856",
-      "email": "pdharan@gmail.com",
-      "id": 17
-    },
-    {
       "models": "Cullinan",
       "Title": "Ms",
       "fname": "rithi",
@@ -1225,6 +1108,30 @@
       "model": "Cullinan",
       "status": "Order Accepted",
       "id": 74
+    },
+    {
+      "email": "dhivya4567890@gmail.com",
+      "status": "Order Accepted",
+      "id": 75
+    },
+    {
+      "email": "dhivya4567890@gmail.com",
+      "status": "Order Accepted",
+      "id": 76
+    },
+    {
+      "email": "dhivya4567890@gmail.com",
+      "status": "Order Accepted",
+      "id": 77
+    },
+    {
+      "fname": "priya",
+      "lname": "p",
+      "mobile": "67895434",
+      "email": "priya@gmail.com",
+      "model": "Phantom",
+      "status": "Order Accepted",
+      "id": 78
     }
   ],
   "GenanerateBills": [
@@ -1426,5 +1333,6 @@
       "StartingPrice": "$315,000Cr",
       "type": "dawn"
     }
-  ]
+  ],
+  "ServiceAcceptDetails": []
 }

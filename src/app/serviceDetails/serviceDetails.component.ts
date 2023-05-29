@@ -3,6 +3,8 @@ import { DetailServiceService } from '../detailService.service';
 import {MatPaginator} from '@angular/material/paginator';
 import {MatSort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
+import { HttpClient } from '@angular/common/http';
+import { ServiceAcceptedpageComponent } from '../serviceAcceptedpage/serviceAcceptedpage.component';
 @Component({
   selector: 'app-serviceDetails',
   templateUrl: './serviceDetails.component.html',
@@ -15,8 +17,9 @@ export class ServiceDetailsComponent implements OnInit {
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
   DetailService: any;
+  dialog: any;
 
-  constructor(private service:DetailServiceService) { }
+  constructor(private service:DetailServiceService,private http:HttpClient) { }
   getLoginvalue:any=" ";
    ngOnInit() {
      this.getServiceList();
@@ -49,6 +52,25 @@ export class ServiceDetailsComponent implements OnInit {
    })
   }
 
+  open(value:any){
+    // var body={
+    //   "fname":value.fname,
+    //   "lname":value.lname,
+    //   "mobile":value.phonenumber,
+    //   "email":value.email,
+    //   "model":value.models,
+    //   "status":"Order Accepted"
+    // }
+    // this.http.post<any>("http://localhost:3000/OrderAcceptedDetails",body).subscribe(()=>{
 
+    //     this.openDialog(value);
+    // });
 
+  }
+  openDialog() {
+    this.dialog.open(ServiceAcceptedpageComponent, {
+      width:'35%',
+      height:'65%'
+    });
+  }
 }
