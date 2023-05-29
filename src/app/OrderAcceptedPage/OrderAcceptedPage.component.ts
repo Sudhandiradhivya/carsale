@@ -53,7 +53,7 @@ retUrl:any;
      "email":this.detailService.billGenerate.email,
      "amount":this.OrdersForm.value.amount
   }
-  alert(this.detailService.billGenerate.fname);
+  
 
   this.http.post<any>(" http://localhost:3000/GenanerateBills",body).subscribe(()=>{
 

@@ -14,6 +14,7 @@ export class ServiceloginComponent implements OnInit {
     custId:[,[Validators.required]],
     vehicleNumber:[,[Validators.required]],
     mileage:[,[Validators.required]],
+    email: [,[Validators.required, Validators.pattern('^([a-zA-Z0-9.-]+)@([a-z0-9-]+).([a-z]{2,8})(.[a-z]{2,8})$')]],
     branch:[,[Validators.required]],
     service:[,[Validators.required]]
   })

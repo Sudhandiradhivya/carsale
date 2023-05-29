@@ -226,36 +226,13 @@
   ],
   "serviceDetails": [
     {
-      "custId": 12,
-      "vehicleNumber": "TN-8769",
-      "mileage": 260,
-      "branch": "Salem",
-      "service": "Oil Change",
-      "id": 7
-    },
-    {
-      "custId": 73,
-      "vehicleNumber": "TN-6754",
-      "mileage": 340,
-      "branch": "Erode",
-      "service": "Exhaust System",
-      "id": 8
-    },
-    {
-      "custId": 3456,
-      "vehicleNumber": "TN-87654",
-      "mileage": 760,
-      "branch": "Namakkal",
+      "custId": 54,
+      "vehicleNumber": "TN-8965",
+      "mileage": 120,
+      "email": "dhivya4567890@gmail.com",
+      "branch": "gudaloor",
       "service": "Light and Accessories",
-      "id": 9
-    },
-    {
-      "custId": 4567,
-      "vehicleNumber": "TV-7865",
-      "mileage": 678,
-      "branch": "cunoor",
-      "service": "Exhaust System",
-      "id": 10
+      "id": 1
     }
   ],
   "adminDetails": [
@@ -434,6 +411,15 @@
       "phonenumber": "67894534",
       "email": "kiruthi@gmail.com",
       "id": 22
+    },
+    {
+      "models": "Cullinan",
+      "Title": "Mr",
+      "fname": "vimal",
+      "lname": "s",
+      "phonenumber": "78564321",
+      "email": "vimal@gmail.com",
+      "id": 23
     }
   ],
   "Images": [
@@ -1230,6 +1216,15 @@
       "model": "Phantom",
       "status": "Order Accepted",
       "id": 73
+    },
+    {
+      "fname": "vimal",
+      "lname": "s",
+      "mobile": "78564321",
+      "email": "vimal@gmail.com",
+      "model": "Cullinan",
+      "status": "Order Accepted",
+      "id": 74
     }
   ],
   "GenanerateBills": [
@@ -1351,6 +1346,13 @@
       "email": "kiruthi@gmail.com",
       "amount": "67000",
       "id": 15
+    },
+    {
+      "fname": "vimal",
+      "lname": "s",
+      "email": "vimal@gmail.com",
+      "amount": "56000",
+      "id": 16
     }
   ],
   "ExampleImages": [

@@ -60,3 +60,14 @@ label{
   margin-top: 20px;
   width:603px;
 }
+.error{
+  color: red;
+  margin-top: 4px;
+  margin-left:25%;
+}
+#validateEmail{
+  width: 75%;
+  height: 40px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
