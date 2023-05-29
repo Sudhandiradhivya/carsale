@@ -46,14 +46,23 @@ retUrl:any;
     }
 
  orders(){
-  this.http.get<any>("http://localhost:3000/OrderAcceptedDetails/").subscribe((data)=>{
+  var body={
+    "fname":this.detailService.billGenerate.fname,
+     "lname":this.detailService.billGenerate.lname,
+     "mobile":this.detailService.billGenerate.mobile,
+     "email":this.detailService.billGenerate.email,
+     "amount":this.OrdersForm.value.amount
+  }
+  alert(this.detailService.billGenerate.fname);
 
-        });
-  this.http.post<any>(" http://localhost:3000/GenanerateBills",this.OrdersForm.value).subscribe(()=>{
+  this.http.post<any>(" http://localhost:3000/GenanerateBills",body).subscribe(()=>{
 
     alert("Bill Generate successfull");
-    this.OrdersForm.reset();
-
+    // this.OrdersForm.reset();
+    // this.ngOnInit();
+    let close=document.getElementById("cancel");
+    close?.click()
   });
  }
+
 }

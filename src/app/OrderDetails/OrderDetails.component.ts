@@ -65,7 +65,6 @@ open(value:any){
   }
   this.http.post<any>("http://localhost:3000/OrderAcceptedDetails",body).subscribe(()=>{
 
-    alert("Updated DB successfull");
       this.openDialog(value);
   });
 

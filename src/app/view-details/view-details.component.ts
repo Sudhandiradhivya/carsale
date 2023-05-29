@@ -13,6 +13,7 @@ values: any;
   constructor(private http:HttpClient) { }
 getlogged:any="";
 acceptdetails:any="";
+payment:any="";
   ngOnInit() {
     const logged=sessionStorage.getItem('user');
     if(logged){
@@ -28,7 +29,14 @@ if(values){
 this.getId(values);
 }
 })
-
+this.http.get<any>("http://localhost:3000/GenanerateBills").subscribe((bill)=>{
+  const getamount=bill.find((c:any)=>{
+    return this.getlogged.email===c.email;
+  });
+  if(getamount){
+       this.payment=getamount;
+  }
+})
 
   }
 getId(values:any){
