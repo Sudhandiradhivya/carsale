@@ -17,6 +17,7 @@ export class HeaderComponent implements OnInit {
    }
 
   ngOnInit() {
+    
 
   }
 
@@ -28,5 +29,5 @@ export class HeaderComponent implements OnInit {
     this.route.navigate(['Home']);
 
   }
-  
+
 }

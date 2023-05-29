@@ -15,6 +15,7 @@ export class OrderAcceptedPageComponent implements OnInit {
   register: any;
 retUrl:any;
   acceptdetails: any;
+  order:any;
   constructor(private fb:FormBuilder, private service:ServiceService,private route:Router,private http:HttpClient,private detailService:DetailServiceService) { }
    OrdersForm=this.fb.group({
 
@@ -53,16 +54,22 @@ retUrl:any;
      "email":this.detailService.billGenerate.email,
      "amount":this.OrdersForm.value.amount
   }
-  
+
 
   this.http.post<any>(" http://localhost:3000/GenanerateBills",body).subscribe(()=>{
 
     alert("Bill Generate successfull");
-    // this.OrdersForm.reset();
-    // this.ngOnInit();
     let close=document.getElementById("cancel");
-    close?.click()
+    close?.click();
+
   });
+  
  }
 
+
+//  close(values:any){
+//   this.http.get<any>("http://localhost:3000/OrderDetails").subscribe(()=>{
+//   alert("")
+//   });
+// }
 }

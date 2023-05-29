@@ -64,16 +64,25 @@ open(value:any){
     "status":"Order Accepted"
   }
   this.http.post<any>("http://localhost:3000/OrderAcceptedDetails",body).subscribe(()=>{
-
       this.openDialog(value);
   });
-
 }
+
 openDialog(value:any) {
   this.service.billGenerate=value;
   this.dialog.open(OrderAcceptedPageComponent, {
     width:'35%',
-    height:'65%'
+    height:'65%',
+
+  });
+ return close();
+}
+close(){
+  this.http.get<any>("http://localhost:3000/OrderAcceptedDetails").subscribe(()=>{
+
+  let remove=document.getElementById("delete");
+  remove?.click()
+
   });
 }
 
