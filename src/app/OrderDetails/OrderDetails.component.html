@@ -46,7 +46,7 @@
   <!-- <button mat-icon-button color="warn" aria-label="Example icon button with a heart icon" (click)="open(row)" >
     <mat-icon>favorite</mat-icon>
   </button> -->
-  <button mat-raised-button color="primary" (click)="open(row)">Accept</button>
+  <button mat-raised-button color="primary" [disabled]="row.clicked" (click)="open(row); row.clicked=true; ">Accept</button>
   <button mat-icon-button color="warn" (click)="deleteOrder(row.id)" id="delete">
     <mat-icon>delete</mat-icon>
  </button>
@@ -61,9 +61,8 @@
   <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
 </tr>
 </table>
-
-<mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
-   </div>
+ <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]" aria-label="Select page of users"></mat-paginator>
+</div>
 </div>
 </div>
 </div>

@@ -21,6 +21,7 @@ export class OrderDetailsComponent implements OnInit {
   @ViewChild(MatSort) sort!: MatSort;
   DetailService: any;
 
+  clicked=false;
   constructor(private service:DetailServiceService,private http:HttpClient,private dialog:MatDialog) { }
   getLoginvalue:any=" ";
    ngOnInit() {
@@ -65,6 +66,7 @@ open(value:any){
   }
   this.http.post<any>("http://localhost:3000/OrderAcceptedDetails",body).subscribe(()=>{
       this.openDialog(value);
+
   });
 }
 
@@ -75,16 +77,9 @@ openDialog(value:any) {
     height:'65%',
 
   });
- return close();
-}
-close(){
-  this.http.get<any>("http://localhost:3000/OrderAcceptedDetails").subscribe(()=>{
 
-  let remove=document.getElementById("delete");
-  remove?.click()
-
-  });
 }
+
 
 }
 function openDialog() {
