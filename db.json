@@ -30,20 +30,6 @@
   "Register": [
     {
       "username": "dhivya",
-      "email": "dhivya4567890@gmail.com",
-      "password": "Kdhivya@12",
-      "confirmPassword": "Kdhivya@12",
-      "id": 6
-    },
-    {
-      "username": "mona",
-      "email": "dhivya@gmail.com",
-      "password": "Kd@12",
-      "confirmPassword": "Kd@12",
-      "id": 8
-    },
-    {
-      "username": "dhivya",
       "email": "dhivya456@gmail.com",
       "password": "Kd@12",
       "confirmPassword": "Kd@12",
@@ -71,25 +57,11 @@
       "id": 16
     },
     {
-      "username": "dhivya",
-      "email": "monish@gmail.com",
-      "password": "Kmona@23",
-      "confirmPassword": "Kmona@23",
-      "id": 17
-    },
-    {
       "username": "vimal",
       "email": "vimal@gmail.com",
       "password": "Vimal@23",
       "confirmPassword": "Vimal@23",
       "id": 18
-    },
-    {
-      "username": "Kumar",
-      "email": "kumars@gmail.com",
-      "password": "Kumar@23",
-      "confirmPassword": "Kumar@23",
-      "id": 19
     },
     {
       "username": "hariprasath",
@@ -267,15 +239,6 @@
       "phonenumber": "67895434",
       "email": "priya@gmail.com",
       "id": 20
-    },
-    {
-      "models": "Phantom",
-      "Title": "Mrs",
-      "fname": "mythili",
-      "lname": "v",
-      "phonenumber": "78904532",
-      "email": "mythili@gmail.com",
-      "id": 21
     },
     {
       "models": "Phantom",
@@ -1465,6 +1428,15 @@
       "model": "Cullinan",
       "status": "Order Accepted",
       "id": 115
+    },
+    {
+      "fname": "mythili",
+      "lname": "v",
+      "mobile": "78904532",
+      "email": "mythili@gmail.com",
+      "model": "Phantom",
+      "status": "Order Accepted",
+      "id": 116
     }
   ],
   "GenanerateBills": [
@@ -1733,6 +1705,13 @@
       "email": "rithi@gmail.com",
       "amount": "89000",
       "id": 36
+    },
+    {
+      "fname": "mythili",
+      "lname": "v",
+      "email": "mythili@gmail.com",
+      "amount": "89000",
+      "id": 37
     }
   ],
   "ExampleImages": [
