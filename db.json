@@ -224,42 +224,6 @@
   "Modelsregister": [
     {
       "models": "Cullinan",
-      "Title": "Ms",
-      "fname": "rithi",
-      "lname": "k",
-      "phonenumber": "89674534",
-      "email": "rithi@gmail.com",
-      "id": 18
-    },
-    {
-      "models": "Phantom",
-      "Title": "Mrs",
-      "fname": "priya",
-      "lname": "p",
-      "phonenumber": "67895434",
-      "email": "priya@gmail.com",
-      "id": 20
-    },
-    {
-      "models": "Phantom",
-      "Title": "Mrs",
-      "fname": "kiruthi",
-      "lname": "n",
-      "phonenumber": "67894534",
-      "email": "kiruthi@gmail.com",
-      "id": 22
-    },
-    {
-      "models": "Cullinan",
-      "Title": "Mr",
-      "fname": "vimal",
-      "lname": "s",
-      "phonenumber": "78564321",
-      "email": "vimal@gmail.com",
-      "id": 23
-    },
-    {
-      "models": "Cullinan",
       "Title": "Mr",
       "fname": "harshath",
       "lname": "t",
@@ -1455,6 +1419,69 @@
       "model": "Phantom",
       "status": "Order Accepted",
       "id": 118
+    },
+    {
+      "fname": "rithi",
+      "lname": "k",
+      "mobile": "89674534",
+      "email": "rithi@gmail.com",
+      "model": "Cullinan",
+      "status": "Order Accepted",
+      "id": 119
+    },
+    {
+      "fname": "rithi",
+      "lname": "k",
+      "mobile": "89674534",
+      "email": "rithi@gmail.com",
+      "model": "Cullinan",
+      "status": "Order Accepted",
+      "id": 120
+    },
+    {
+      "fname": "rithi",
+      "lname": "k",
+      "mobile": "89674534",
+      "email": "rithi@gmail.com",
+      "model": "Cullinan",
+      "status": "Order Accepted",
+      "id": 121
+    },
+    {
+      "fname": "kiruthi",
+      "lname": "n",
+      "mobile": "67894534",
+      "email": "kiruthi@gmail.com",
+      "model": "Phantom",
+      "status": "Order Accepted",
+      "id": 122
+    },
+    {
+      "fname": "kiruthi",
+      "lname": "n",
+      "mobile": "67894534",
+      "email": "kiruthi@gmail.com",
+      "model": "Phantom",
+      "status": "Order Accepted",
+      "id": 123
+    },
+    {
+      "fname": "vimal",
+      "lname": "s",
+      "mobile": "78564321",
+      "email": "vimal@gmail.com",
+      "model": "Cullinan",
+      "status": "Order Accepted",
+      "id": 124
+    },
+    {
+      "fname": "priya",
+      "lname": "p",
+      "mobile": "67895434",
+      "email": "priya@gmail.com",
+      "model": "Phantom",
+      "status": "Order Accepted",
+      "id": 125
     }
   ],
   "GenanerateBills": [
@@ -1737,6 +1764,20 @@
       "email": "kiruthi@gmail.com",
       "amount": "67000",
       "id": 38
+    },
+    {
+      "fname": "rithi",
+      "lname": "k",
+      "email": "rithi@gmail.com",
+      "amount": "80000",
+      "id": 39
+    },
+    {
+      "fname": "kiruthi",
+      "lname": "n",
+      "email": "kiruthi@gmail.com",
+      "amount": "89000",
+      "id": 40
     }
   ],
   "ExampleImages": [

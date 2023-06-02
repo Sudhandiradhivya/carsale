@@ -68,6 +68,18 @@ open(value:any){
       this.openDialog(value);
 
   });
+  this.a(value);
+
+
+}
+a(value:any){
+  var body={
+    "status":"Order Accepted"
+  }
+  this.http.patch<any>("http://localhost:3000/Modelsregister/"+value.id,body).subscribe(()=>{
+    alert("patch successfully");
+
+  })
 }
 
 openDialog(value:any) {
@@ -77,7 +89,7 @@ openDialog(value:any) {
     height:'65%',
 
   });
-
+ 
 }
 
 
