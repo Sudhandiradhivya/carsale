@@ -141,9 +141,10 @@ input[type=submit]{
   color: rgb(9, 9, 9);
 }
 .input-group .inputs select{
-  width: 61%;
-  height: 20px;
-  margin: 20px;
+  width: 62%;
+  height: 30px;
+  margin-left: 18px;
+  margin-top: 5px;
   border-bottom:1px solid rgb(214, 205, 205);
   outline: none;
   background:transparent;
@@ -153,11 +154,11 @@ input[type=submit]{
  .inputs .inputs1 input{
     width: 57%;
     height: 30px;
-    padding: 9px;
+
     }
-    .input-group input{
+    .input-group .inputs input{
       width:59%;
-      height: 20px;
+      height: 30px;
       margin-left: 19px;
 
       border-bottom:5px 3px rgb(48, 47, 47);
