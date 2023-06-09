@@ -104,6 +104,13 @@
       "password": "Kir@78",
       "confirmPassword": "Kir@78",
       "id": 25
+    },
+    {
+      "username": "monikashri",
+      "email": "monishri@gmail.com",
+      "password": "Monika@45",
+      "confirmPassword": "Monika@45",
+      "id": 26
     }
   ],
   "products": [
@@ -230,6 +237,16 @@
       "phonenumber": "9895467880",
       "email": "harsha@gmail.com",
       "id": 24
+    },
+    {
+      "models": "Wraith",
+      "Title": "Ms",
+      "fname": "sumithra",
+      "lname": "k",
+      "phonenumber": "89675645",
+      "email": "sumi@gmail.com",
+      "id": 25,
+      "status": "Order Accepted"
     }
   ],
   "Images": [
@@ -1482,6 +1499,24 @@
       "model": "Phantom",
       "status": "Order Accepted",
       "id": 125
+    },
+    {
+      "fname": "sumithra",
+      "lname": "k",
+      "mobile": "8967453256",
+      "email": "sumi@gmail.com",
+      "model": "Phantom",
+      "status": "Order Accepted",
+      "id": 126
+    },
+    {
+      "fname": "sumithra",
+      "lname": "k",
+      "mobile": "89675645",
+      "email": "sumi@gmail.com",
+      "model": "Wraith",
+      "status": "Order Accepted",
+      "id": 127
     }
   ],
   "GenanerateBills": [
@@ -1778,6 +1813,13 @@
       "email": "kiruthi@gmail.com",
       "amount": "89000",
       "id": 40
+    },
+    {
+      "fname": "sumithra",
+      "lname": "k",
+      "email": "sumi@gmail.com",
+      "amount": "896000",
+      "id": 41
     }
   ],
   "ExampleImages": [
