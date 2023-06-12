@@ -111,6 +111,13 @@
       "password": "Monika@45",
       "confirmPassword": "Monika@45",
       "id": 26
+    },
+    {
+      "username": "Ramya",
+      "email": "ramya@gmail.com",
+      "password": "Ramya@78",
+      "confirmPassword": "Ramya@78",
+      "id": 27
     }
   ],
   "products": [
@@ -212,6 +219,15 @@
       "branch": "gudaloor",
       "service": "Light and Accessories",
       "id": 1
+    },
+    {
+      "custId": 8960,
+      "vehicleNumber": "7890",
+      "mileage": 450,
+      "email": "ramya@gmail.com",
+      "branch": "mumbai",
+      "service": "Brakes and Brakes Repair",
+      "id": 2
     }
   ],
   "adminDetails": [
