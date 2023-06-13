@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ModelService } from '../Model.service';
 import { DetailServiceService } from '../detailService.service';
@@ -54,4 +54,16 @@ model:any="";
     this.modelCount=data;
     console.log(this.modelCount);
   }
+
+
+
+  
+
+ searchText:string='';
+
+ onSearchTextChanged(searchValue:string){
+  this.searchText=searchValue;
+
+}
+
 }

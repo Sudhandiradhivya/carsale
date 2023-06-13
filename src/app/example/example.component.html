@@ -1,4 +1,4 @@
-
+<app-search (SearchValueChanged)="onSearchTextChanged($event)"></app-search>
 <app-buttonfilter
 [total]="getTotalModel()"
 [ghost]="getTotalGhost()"
@@ -12,7 +12,8 @@
   <div class="news">
     <div class="News-content"style="margin-left: 50px;">
 <ng-container *ngFor="let model of getExample">
-      <mat-card class="example-card" *ngIf="modelCount ==='All' || modelCount === model.type">
+  <!-- *ngIf="modelCount ==='All' || modelCount === model.type" -->
+      <mat-card class="example-card" *ngIf="modelCount ===' ' || model.type.toLowerCase().includes(searchText)">
         <h5>{{model.id}}</h5>
        <mat-card-header>
 

@@ -64,8 +64,9 @@ import { ViewDetailsComponent } from './view-details/view-details.component';
 import { OrderAcceptedPageComponent } from './OrderAcceptedPage/OrderAcceptedPage.component';
 import { ButtonfilterComponent } from './buttonfilter/buttonfilter.component';
 import { ServiceAcceptedpageComponent } from './serviceAcceptedpage/serviceAcceptedpage.component';
+import { SearchComponent } from './search/search.component';
 @NgModule({
-  declarations: [				
+  declarations: [					
     AppComponent,
       HomeComponent,
       AboutComponent,
@@ -106,7 +107,8 @@ import { ServiceAcceptedpageComponent } from './serviceAcceptedpage/serviceAccep
       ViewDetailsComponent,
       OrderAcceptedPageComponent,
       ButtonfilterComponent,
-      ServiceAcceptedpageComponent
+      ServiceAcceptedpageComponent,
+      SearchComponent
    ],
   imports: [
     BrowserModule,
