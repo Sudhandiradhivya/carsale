@@ -1,4 +1,23 @@
-
+.search input{
+  width: 25%;
+  height: 30px;
+  margin-left: 50px;
+  font-size: large;
+  font-family: poppins;
+}
+.search button{
+  width: 5%;
+  height: 35px;
+  color: black;
+  font-size: 15px;
+  font-family: poppins;
+}
+.search p{
+  margin-left: 50px;
+  margin-top: 10px;
+  font-family: poppins;
+  font-size: 16px;
+}
 /* p{
   margin-top: 260px;
   padding: 30px;

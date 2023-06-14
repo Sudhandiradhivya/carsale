@@ -57,7 +57,7 @@ model:any="";
 
 
 
-  
+
 
  searchText:string='';
 
@@ -65,5 +65,8 @@ model:any="";
   this.searchText=searchValue;
 
 }
-
+Text:string='';
+searchval(event:any){
+    this.Text=event.value;
+}
 }
