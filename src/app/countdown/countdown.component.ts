@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-Home',
-  templateUrl: './Home.component.html',
-  styleUrls: ['./Home.component.css']
+  selector: 'app-countdown',
+  templateUrl: './countdown.component.html',
+  styleUrls: ['./countdown.component.css']
 })
-export class HomeComponent implements OnInit {
+export class CountdownComponent implements OnInit {
 
   constructor() { }
 
@@ -20,9 +20,5 @@ export class HomeComponent implements OnInit {
   interval:any=setInterval(()=>{
     this.closepop();
   },5000)
-
-  offer(){
-    location.pathname = ('/Models');
-  }
 
 }

@@ -1,0 +1,30 @@
+<div class="count-down">
+  <div class="count-container" *ngIf="popup">
+      <div class="up-content">
+
+          <h5>LAST CHANCE</h5>
+          <h2>Don't Miss Off {{" "}}%</h2>
+          <h6>When you complete your order in</h6>
+
+      </div>
+      <div class="down-content">
+        <div class="countdown">
+           <div class="mins">
+            00
+           </div>
+           <div class="colon">
+            :
+           </div>
+           <div class="secs">
+            00
+           </div>
+          </div>
+      </div>
+      <div class="close" (click)="closepop()">
+        <i class="fa-sharp fa-solid fa-xmark"></i>
+    </div>
+
+  </div>
+
+</div>
+
