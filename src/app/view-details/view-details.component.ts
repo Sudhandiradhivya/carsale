@@ -1,7 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import {MatFormFieldModule} from '@angular/material/form-field';
-
+import { PayComponent } from '../pay/pay.component';
+import { MatDialog } from '@angular/material/dialog';
 @Component({
   selector: 'app-view-details',
   templateUrl: './view-details.component.html',
@@ -9,8 +10,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 })
 export class ViewDetailsComponent implements OnInit {
 values: any;
+ 
 
-  constructor(private http:HttpClient) { }
+  constructor(private http:HttpClient,private dialog:MatDialog) { }
 getlogged:any="";
 acceptdetails:any="";
 payment:any="";
@@ -44,5 +46,10 @@ getId(values:any){
     this.acceptdetails=data;
         });
 }
-
+openDialog() {
+  this.dialog.open(PayComponent, {
+    width:'35%',
+    height:'65%'
+  });
+}
 }

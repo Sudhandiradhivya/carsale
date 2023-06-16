@@ -280,6 +280,16 @@
       "email": "sumi@gmail.com",
       "id": 26,
       "status": "Order Accepted"
+    },
+    {
+      "models": "Ghost",
+      "Title": "Mrs",
+      "fname": "vaishnavi",
+      "lname": "m",
+      "phonenumber": "6789564534",
+      "email": "vashu@gmail.com",
+      "id": 27,
+      "status": "Order Accepted"
     }
   ],
   "Images": [
@@ -1559,6 +1569,15 @@
       "model": "Phantom",
       "status": "Order Accepted",
       "id": 128
+    },
+    {
+      "fname": "vaishnavi",
+      "lname": "m",
+      "mobile": "6789564534",
+      "email": "vashu@gmail.com",
+      "model": "Ghost",
+      "status": "Order Accepted",
+      "id": 129
     }
   ],
   "GenanerateBills": [
@@ -1862,6 +1881,13 @@
       "email": "sumi@gmail.com",
       "amount": "896000",
       "id": 41
+    },
+    {
+      "fname": "vaishnavi",
+      "lname": "m",
+      "email": "vashu@gmail.com",
+      "amount": "7800000",
+      "id": 42
     }
   ],
   "ExampleImages": [

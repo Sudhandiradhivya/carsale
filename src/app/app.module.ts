@@ -66,8 +66,9 @@ import { ButtonfilterComponent } from './buttonfilter/buttonfilter.component';
 import { ServiceAcceptedpageComponent } from './serviceAcceptedpage/serviceAcceptedpage.component';
 import { SearchComponent } from './search/search.component';
 import { CountdownComponent } from './countdown/countdown.component';
+import { PayComponent } from './pay/pay.component';
 @NgModule({
-  declarations: [						
+  declarations: [							
     AppComponent,
       HomeComponent,
       AboutComponent,
@@ -110,7 +111,8 @@ import { CountdownComponent } from './countdown/countdown.component';
       ButtonfilterComponent,
       ServiceAcceptedpageComponent,
       SearchComponent,
-      CountdownComponent
+      CountdownComponent,
+      PayComponent
    ],
   imports: [
     BrowserModule,

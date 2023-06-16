@@ -13,18 +13,18 @@
 
           <li><a routerLink="/home" routerLinkActive="active"> Home</a></li>
           <li><a routerLink="/About" routerLinkActive="active">About Us</a></li>
-          <li class="/drop" routerLinkActive="active"><a routerLink="/Service">Service</a></li>
-          <li class="/dropdown" routerLinkActive="active"><a routerLink="/Models" id="carDropdown">Models</a></li>
+          <li class="/drop"><a routerLink="/Service" routerLinkActive="active">Service</a></li>
+          <li class="/dropdown" ><a routerLink="/Models" id="carDropdown" routerLinkActive="active">Models</a></li>
 
         </ul>
         <div class="subnav">
           <a routerLink="/loginnew" *ngIf="!usersuccess">Login </a>
         </div>
         <div class="subnav" id="logout" style="cursor: pointer;">
-          <a *ngIf="usersuccess" (click)="logout()">Logout</a>
+          <a *ngIf="usersuccess" (click)="logout()" routerLinkActive="active">Logout</a>
         </div>
         <div class="subnav" id="logout" style="cursor: pointer;">
-          <a *ngIf="usersuccess" routerLink="/viewdetails">View Update</a>
+          <a *ngIf="usersuccess" routerLink="/viewdetails" routerLinkActive="active">View Update</a>
         </div>
 
       </div>
