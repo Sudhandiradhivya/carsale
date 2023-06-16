@@ -118,6 +118,13 @@
       "password": "Ramya@78",
       "confirmPassword": "Ramya@78",
       "id": 27
+    },
+    {
+      "username": "vaishnavi",
+      "email": "vashu@gmail.com",
+      "password": "Vaishu@123",
+      "confirmPassword": "Vaishu@123",
+      "id": 28
     }
   ],
   "products": [
