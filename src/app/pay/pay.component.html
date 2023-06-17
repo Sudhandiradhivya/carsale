@@ -1,8 +1,11 @@
 <div class="debit" [formGroup]="debitCardForm">
   <h2>Pay on Credit/Debit card</h2>
+  <div class="credit-card" #inputval>
+
+
       <div class="cardNumber">
         <label for="">Debit/Credit Card Number: </label><br><br>
-        <input type="text" name="cardNumber" formControlName="cardNumber" pattern="[0-9]{16}" id="field1" placeholder="Enter the 16 digits Card No">
+        <input type="text" name="cardNumber" formControlName="cardNumber" pattern="[0-9]{16}" id="field1" placeholder="Enter the 16 digits Card No" >
         <div class="cardNoValid" *ngIf="debitCardForm.controls['cardNumber'].dirty">
           <p *ngIf="debitCardForm.controls['cardNumber'].errors?.['required']">
             Enter the Field
@@ -22,7 +25,7 @@
           </div>
           </div><br>
           <div class="ccv">
-            <label for="">CCV Number:</label>
+            <label for="">CCV Number:</label><br><br>
             <input type="text" name="ccvNumber" formControlName="ccvNumber" pattern="^[0-9]{3,4}$" id="field3" placeholder="CCV No">
             <div class="ccvValid" *ngIf="(debitCardForm.controls['ccvNumber'].dirty || debitCardForm.controls['ccvNumber'].touched) && debitCardForm.controls['ccvNumber'].invalid ">
               <p *ngIf="debitCardForm.controls['ccvNumber'].errors?.['required']">
@@ -32,6 +35,7 @@
                 Please Enter Valid CVV number
                </p>
             </div><br>
-            <button [disabled]="debitCardForm.invalid" style="margin: 30px 50px 10px 120px" id="refchange" (click)="pay()">Pay</button>
+            <button [disabled]="debitCardForm.invalid" style="margin: 30px 50px 0px 50px;width: 70%;padding: 8px;color: white;font-size: 15px;background-color: #4ed4f2;cursor: pointer;" id="refchange" (click)="pay()">Pay</button>
       </div>
+    </div>
     </div>

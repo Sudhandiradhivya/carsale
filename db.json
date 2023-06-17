@@ -294,6 +294,16 @@
       "email": "muthu@gmail.com",
       "id": 30,
       "status": "Order Accepted"
+    },
+    {
+      "models": "Wraith",
+      "Title": "Mr",
+      "fname": "Manikandan",
+      "lname": "a",
+      "phonenumber": "7890567845",
+      "email": "mani@gmail.com",
+      "id": 31,
+      "status": "Order Accepted"
     }
   ],
   "Images": [
@@ -1600,6 +1610,15 @@
       "model": "cullinan",
       "status": "Order Accepted",
       "id": 131
+    },
+    {
+      "fname": "Manikandan",
+      "lname": "a",
+      "mobile": "7890567845",
+      "email": "mani@gmail.com",
+      "model": "Wraith",
+      "status": "Order Accepted",
+      "id": 132
     }
   ],
   "GenanerateBills": [
@@ -1917,6 +1936,13 @@
       "email": "muthu@gmail.com",
       "amount": "890000",
       "id": 43
+    },
+    {
+      "fname": "Manikandan",
+      "lname": "a",
+      "email": "mani@gmail.com",
+      "amount": "5000000",
+      "id": 44
     }
   ],
   "ExampleImages": [

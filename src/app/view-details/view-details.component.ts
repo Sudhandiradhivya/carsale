@@ -10,7 +10,7 @@ import { MatDialog } from '@angular/material/dialog';
 })
 export class ViewDetailsComponent implements OnInit {
 values: any;
- 
+
 
   constructor(private http:HttpClient,private dialog:MatDialog) { }
 getlogged:any="";
@@ -48,7 +48,7 @@ getId(values:any){
 }
 openDialog() {
   this.dialog.open(PayComponent, {
-    width:'35%',
+    width:'32%',
     height:'65%'
   });
 }
