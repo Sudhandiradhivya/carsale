@@ -47,6 +47,7 @@ const routes: Routes = [
    path:"Service",
    component:ServiceComponent,
 
+
   },
   {
     path:"Models",
@@ -60,7 +61,8 @@ const routes: Routes = [
   },
   {
     path:"servicelogin",
-    component:ServiceloginComponent
+    component:ServiceloginComponent,
+    canDeactivate:[DeactivateGuard]
   },
   {
     path:"Ghost",

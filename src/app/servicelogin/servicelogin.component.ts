@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
 import { ServiceService } from '../service.service';
+import { IDeactivateComponent } from '../deactivate.guard';
 
 @Component({
   selector: 'app-servicelogin',
   templateUrl: './servicelogin.component.html',
   styleUrls: ['./servicelogin.component.css']
 })
-export class ServiceloginComponent implements OnInit {
+export class ServiceloginComponent implements OnInit, IDeactivateComponent{
 
   constructor(private fb:FormBuilder, private service:ServiceService) { }
   serviceForm=this.fb.group({
@@ -24,6 +25,18 @@ export class ServiceloginComponent implements OnInit {
       alert("Form Submitted Successfully");
       this.serviceForm.reset();
     });
+  }
+
+
+
+
+  canExit(){
+    if(this.serviceForm||this.serviceForm !=null){
+      return confirm( "you have unsaved changes.Do you really want to discard the changes");
+    }
+    else{
+       return true;
+    }
   }
 
 }
