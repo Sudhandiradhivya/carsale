@@ -53,6 +53,9 @@ const routes: Routes = [
     component:ModelsComponent,
    canActivate:[ModelGuard]
   },
+  {path:'**',children:[
+    {path:'Models/:id',component:ModelsComponent,}
+  ]},
   {
     path:"loginnew",
     component:LoginnewComponent
@@ -61,26 +64,26 @@ const routes: Routes = [
     path:"servicelogin",
     component:ServiceloginComponent
   },
-  {
-    path:"Ghost",
-    component:GhostComponent
-  },
-  {
-    path:"Cullinan",
-    component:CullinanComponent
-  },
-  {
-    path:"Phantom",
-    component:PhantomComponent
-  },
-  {
-    path:"Wraith",
-    component:WraithComponent
-  },
-  {
-    path:"Dawn",
-    component:DawnComponent
-  },
+  // {
+  //   path:"Ghost",
+  //   component:GhostComponent
+  // },
+  // {
+  //   path:"Cullinan",
+  //   component:CullinanComponent
+  // },
+  // {
+  //   path:"Phantom",
+  //   component:PhantomComponent
+  // },
+  // {
+  //   path:"Wraith",
+  //   component:WraithComponent
+  // },
+  // {
+  //   path:"Dawn",
+  //   component:DawnComponent
+  // },
   {
     path:"Cart",
     component:CartComponent

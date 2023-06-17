@@ -125,6 +125,20 @@
       "password": "Vaishu@123",
       "confirmPassword": "Vaishu@123",
       "id": 28
+    },
+    {
+      "username": "manikandan",
+      "email": "mani@gmail.com",
+      "password": "Mani@67",
+      "confirmPassword": "Mani@67",
+      "id": 29
+    },
+    {
+      "username": "muthu",
+      "email": "muthu@gmail.com",
+      "password": "Muthu@67",
+      "confirmPassword": "Muthu@67",
+      "id": 30
     }
   ],
   "products": [
@@ -262,33 +276,23 @@
       "id": 24
     },
     {
-      "models": "Wraith",
-      "Title": "Ms",
-      "fname": "sumithra",
-      "lname": "k",
-      "phonenumber": "89675645",
-      "email": "sumi@gmail.com",
-      "id": 25,
+      "models": "cullinan",
+      "Title": "Mr",
+      "fname": "Muthu",
+      "lname": "a",
+      "phonenumber": "6789087967",
+      "email": "muthu@gmail.com",
+      "id": 29,
       "status": "Order Accepted"
     },
     {
-      "models": "Phantom",
-      "Title": "Mrs",
-      "fname": "Sumithra",
-      "lname": "v",
-      "phonenumber": "8956784534",
-      "email": "sumi@gmail.com",
-      "id": 26,
-      "status": "Order Accepted"
-    },
-    {
-      "models": "Ghost",
-      "Title": "Mrs",
-      "fname": "vaishnavi",
-      "lname": "m",
-      "phonenumber": "6789564534",
-      "email": "vashu@gmail.com",
-      "id": 27,
+      "models": "cullinan",
+      "Title": "Mr",
+      "fname": "muthu",
+      "lname": "a",
+      "phonenumber": "89789056",
+      "email": "muthu@gmail.com",
+      "id": 30,
       "status": "Order Accepted"
     }
   ],
@@ -1578,6 +1582,24 @@
       "model": "Ghost",
       "status": "Order Accepted",
       "id": 129
+    },
+    {
+      "fname": "Muthu",
+      "lname": "a",
+      "mobile": "6789087967",
+      "email": "muthu@gmail.com",
+      "model": "cullinan",
+      "status": "Order Accepted",
+      "id": 130
+    },
+    {
+      "fname": "muthu",
+      "lname": "a",
+      "mobile": "89789056",
+      "email": "muthu@gmail.com",
+      "model": "cullinan",
+      "status": "Order Accepted",
+      "id": 131
     }
   ],
   "GenanerateBills": [
@@ -1888,6 +1910,13 @@
       "email": "vashu@gmail.com",
       "amount": "7800000",
       "id": 42
+    },
+    {
+      "fname": "Muthu",
+      "lname": "a",
+      "email": "muthu@gmail.com",
+      "amount": "890000",
+      "id": 43
     }
   ],
   "ExampleImages": [

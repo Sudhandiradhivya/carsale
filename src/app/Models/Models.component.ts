@@ -15,7 +15,12 @@ export class ModelsComponent implements OnInit {
       this.getProduct=data;
     });
   }
-  
+
+name1:string='R R Ghost';
+name2:string='R RCullinan';
+name3:string='R R Wraith';
+name4:string='R R Phantom';
+name5:string='R R Dawn';
 
 
   ngOnInit() {

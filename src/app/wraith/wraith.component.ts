@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ModelsregisterComponent } from '../Modelsregister/Modelsregister.component';
+import { ServiceService } from '../service.service';
 
 @Component({
   selector: 'app-wraith',
@@ -10,7 +11,7 @@ import { ModelsregisterComponent } from '../Modelsregister/Modelsregister.compon
 export class WraithComponent implements OnInit {
 
 
-  constructor(private dialog:MatDialog) { }
+  constructor(private dialog:MatDialog,private service:ServiceService) { }
 
   ngOnInit() {
   }
@@ -31,5 +32,9 @@ export class WraithComponent implements OnInit {
       width:'35%',
       height:'65%'
     });
+this.cullinan();
+  }
+  cullinan(){
+    this.service.content='Wraith';
   }
 }

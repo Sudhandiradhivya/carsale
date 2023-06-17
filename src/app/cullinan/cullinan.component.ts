@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { ModelsregisterComponent } from '../Modelsregister/Modelsregister.component';
+import { CullinanService } from './cullinan.service';
+import { ServiceService } from '../service.service';
 
 @Component({
   selector: 'app-cullinan',
@@ -9,7 +11,7 @@ import { ModelsregisterComponent } from '../Modelsregister/Modelsregister.compon
 })
 export class CullinanComponent implements OnInit {
 
-  constructor(private dialog:MatDialog) { }
+  constructor(private dialog:MatDialog,private service:ServiceService) { }
 
   ngOnInit() {
   }
@@ -30,5 +32,9 @@ export class CullinanComponent implements OnInit {
       width:'35%',
       height:'65%'
     });
+this.cullinan();
+  }
+  cullinan(){
+    this.service.content='Cullinan';
   }
 }

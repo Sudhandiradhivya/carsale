@@ -18,4 +18,5 @@ postLoginDetails(body:any){
   return this.http.post("http://localhost:3000/Register",body)
 
 }
+content:any='';
 }

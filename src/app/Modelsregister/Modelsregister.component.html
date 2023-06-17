@@ -58,17 +58,18 @@
  <form action="" [formGroup]="OrdersForm" >
   <div class="input-group">
       <div class="inputs">
-          <select formControlName="models" id="cars">
+
+          <!-- <select formControlName="models" id="cars" >
               <option value="All models" style="color: rgb(49, 43, 43)">All Models</option>
               <option value="Ghost"style="color: black;">Ghost</option>
               <option value="Phantom"style="color: black;">Phantom</option>
               <option value="Cullinan"style="color: black;">Cullinan</option>
               <option value="Wraith"style="color: black;">Wraith</option>
               <option value="Dawn"style="color: black;">Dawn</option>
-            </select>
-            <!-- <div class="inputs1">
-              <input type="text" placeholder="Type Query(Optional)">
-            </div> -->
+            </select> -->
+            <div class="inputs">
+              <span style="margin-left: 20px;font-size: 18px;font-weight: bold;">{{selectmodels}}</span>
+            </div>
       </div>
 
         <div class="inputs">
@@ -97,7 +98,7 @@
       <div class="butt2" style="margin-top: 29%;">
         <div mat-dialog-action [align]="'end'">
           <button mat-raised-button color="primary" (click)="formRegister()" [disabled]="OrdersForm.invalid">Submit</button>
-          <button style="margin-right: 8px;margin-left: 8px;" mat-raised-button color="warn" mat-dialog-close>Cancel</button>
+          <button style="margin-right: 8px;margin-left: 8px;" mat-raised-button color="warn" mat-dialog-close (click)="cancel()" id="ref">Cancel</button>
 
 
         </div>

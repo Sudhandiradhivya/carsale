@@ -16,7 +16,7 @@
       </div>
       <span> Avg Rating for Rolls-Royce Cars based on 112 review</span>
     </div>
-    
+
       <p>
         There are a total of 5 Rolls-Royce models currently on sale in India. These include 1 Coupe, 1 SUV, 2 Sedans and 1 Convertible.<br>
         <br>
@@ -83,9 +83,9 @@
 
 
 <div class="car-container">
-  <div class="box">
-    <img src="../../assets/ghost.avif" width="100%" height="130px" >
-    <h3>R R Ghost</h3>
+  <div class="box" id="1">
+    <img src="../../assets/ghost.avif" width="100%" height="130px">
+    <h3>{{name1}}</h3>
     <div class="stars-rating">
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
@@ -94,12 +94,12 @@
         <i class="fas fa-star-half-alt"></i>
     </div>
     <span>&#8377;5.20 cr</span><br>
-    <a [routerLink]="'/Ghost'" class="btn">View details</a>
+    <a [routerLink]="'Models/Ghost'" class="btn">View details</a>
   </div>
 
-   <div class="box1">
+   <div class="box1" id="2">
     <img src="../../assets/c.jpg" width="100%" height="130px">
-    <h3>R R cullinan</h3>
+    <h3>{{name2}}</h3>
     <div class="stars-rating">
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
@@ -110,10 +110,10 @@
     <span>&#8377;6.95Cr</span><br>
     <a [routerLink]="'/Cullinan'" class="btn">View details</a>
    </div>
-   <div class="box">
+   <div class="box" id="3">
     <img src="../../assets/wra1.jpg" width="100%" height="130px" >
 
-    <h3>R R wraith</h3>
+    <h3>{{name3}}</h3>
    <div class="stars-rating">
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
@@ -124,11 +124,11 @@
     <span>&#8377;5.50Cr</span><br>
     <a [routerLink]="'/Wraith'" class="btn">View details</a>
    </div>
-   <div class="box1">
+   <div class="box1" id="4">
 
 
     <img src="../../assets/pha1.jpg" width="100%" height="130px">
-    <h3>R R phantom</h3>
+    <h3>{{name4}}</h3>
     <div class="stars-rating">
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>
@@ -141,9 +141,11 @@
 
     <a [routerLink]="'/Phantom'" class="btn">View details</a>
    </div>
-   <div class="box">
+   <div class="box" id="5">
     <img src="../../assets/daw.jpg" width="100%" height="130px">
-    <h3>R R Dawn</h3>
+
+    <h3>{{name5}}</h3>
+
     <div class="stars-rating">
         <i class="fas fa-star"></i>
         <i class="fas fa-star"></i>

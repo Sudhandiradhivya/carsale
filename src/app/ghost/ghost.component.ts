@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {MatDialog, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { ModelsregisterComponent } from '../Modelsregister/Modelsregister.component';
+import { ServiceService } from '../service.service';
 
 @Component({
   selector: 'app-ghost',
@@ -10,7 +11,7 @@ import { ModelsregisterComponent } from '../Modelsregister/Modelsregister.compon
 export class GhostComponent implements OnInit {
 
 
-  constructor(private dialog:MatDialog) { }
+  constructor(private dialog:MatDialog,private service:ServiceService) { }
 
   ngOnInit() {
   }
@@ -31,5 +32,9 @@ export class GhostComponent implements OnInit {
       width:'35%',
       height:'65%'
     });
+this.cullinan();
+  }
+  cullinan(){
+    this.service.content='Ghost';
   }
 }

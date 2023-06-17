@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ModelsregisterComponent } from '../Modelsregister/Modelsregister.component';
 import { MatDialog } from '@angular/material/dialog';
+import { ServiceService } from '../service.service';
 
 @Component({
   selector: 'app-phantom',
@@ -9,7 +10,7 @@ import { MatDialog } from '@angular/material/dialog';
 })
 export class PhantomComponent implements OnInit {
 
-  constructor(private dialog:MatDialog) { }
+  constructor(private dialog:MatDialog,private service:ServiceService) { }
 
   ngOnInit() {
   }
@@ -31,5 +32,9 @@ export class PhantomComponent implements OnInit {
       width:'35%',
       height:'65%'
     });
+this.cullinan();
+  }
+  cullinan(){
+    this.service.content='Phantom';
   }
 }
