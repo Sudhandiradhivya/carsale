@@ -73,4 +73,16 @@ export class ServiceDetailsComponent implements OnInit {
       height:'65%'
     });
   }
+  serviceAccept(data:any)
+  {
+    var body={
+       "email":data.email,
+         "branch":data.branch,
+         "vehicleNumber":data.vehicleNumber,
+         "status":"Service Accepted"
+       }
+this.http.post<any>("http://localhost:3000/ServiceAcceptDetails",body).subscribe(()=>{
+  
+})
+  }
 }

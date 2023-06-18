@@ -16,17 +16,31 @@ values: any;
 getlogged:any="";
 acceptdetails:any="";
 payment:any="";
+getServices:any;
   ngOnInit() {
     const logged=sessionStorage.getItem('user');
     if(logged){
     this.getlogged=JSON.parse(logged);
 
     }
+
+
+
+this.http.get<any>("http://localhost:3000/ServiceAcceptDetails").subscribe((services)=>{
+   const service=services.find((s:any)=>{
+    return this.getlogged.email===s.email;
+   })
+   if(service){
+    this.getServices=service;
+   }
+})
+
     this.http.get<any>("http://localhost:3000/OrderAcceptedDetails").subscribe((data)=>{
 const values=data.find((b:any)=>
 {
   return this.getlogged.email===b.email;
 })
+
 if(values){
 this.getId(values);
 }

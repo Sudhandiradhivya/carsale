@@ -249,6 +249,15 @@
       "branch": "mumbai",
       "service": "Brakes and Brakes Repair",
       "id": 2
+    },
+    {
+      "custId": 8967,
+      "vehicleNumber": "TN-3456",
+      "mileage": 3000,
+      "email": "mani@gmail.com",
+      "branch": "Madurai",
+      "service": "Maintanence Package",
+      "id": 3
     }
   ],
   "adminDetails": [
@@ -2017,5 +2026,13 @@
       "type": "dawn"
     }
   ],
-  "ServiceAcceptDetails": []
+  "ServiceAcceptDetails": [
+    {
+      "email": "mani@gmail.com",
+      "branch": "Madurai",
+      "vehicleNumber": "TN-3456",
+      "status": "Service Accepted",
+      "id": 1
+    }
+  ]
 }
