@@ -31,7 +31,7 @@ export class ServiceloginComponent implements OnInit, IDeactivateComponent{
 
 
   canExit(){
-    if(this.serviceForm||this.serviceForm !=null){
+    if(this.serviceForm){
       return confirm( "you have unsaved changes.Do you really want to discard the changes");
     }
     else{

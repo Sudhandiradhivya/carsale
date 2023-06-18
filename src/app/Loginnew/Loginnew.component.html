@@ -26,11 +26,11 @@
                 <p class="error" *ngIf="loginForms.controls['password'].errors?.['pattern']"><i class="fas fa-exclamation-circle"></i>Enter valid password </p>
              </div>
               <div class="checkbox-text">
-                  <div class="checkbox-content">
+                  <!-- <div class="checkbox-content">
                       <input type="checkbox" id="logCheck">
                       <label for="logCheck" class="text">Remember me</label>
-                  </div>
-                  <a href="#" class="text">Forgot password?</a>
+                  </div> -->
+                  <a  class="text" (click)="openDialog()">Forgot password?</a>
               </div>
               <div class="input-field button">
                   <button class="btn2" >Login</button>

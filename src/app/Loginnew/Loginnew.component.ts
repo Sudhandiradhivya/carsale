@@ -4,6 +4,8 @@ import{HttpClient} from '@angular/common/http';
 import { Router } from '@angular/router';
 import { LoginService } from '../login.service';
 import { ModellingService } from '../modelling.service';
+import { MatDialog } from '@angular/material/dialog';
+import { PasswordresetComponent } from '../passwordreset/passwordreset.component';
 
 @Component({
   selector: 'app-Loginnew',
@@ -13,7 +15,7 @@ import { ModellingService } from '../modelling.service';
 export class LoginnewComponent {
   // [x: string]: any;
   // usersuccess=false;
-  constructor(private formBuilder:FormBuilder,private https:HttpClient,private route:Router, private service:LoginService,private modellingservice:ModellingService) {
+  constructor(private formBuilder:FormBuilder,private https:HttpClient,private route:Router, private service:LoginService,private modellingservice:ModellingService,private dialog:MatDialog) {
    }
 
  loginForms=this.formBuilder.group({
@@ -67,6 +69,13 @@ admin(){
     }
 
   })
+}
+openDialog() {
+  this.dialog.open(PasswordresetComponent, {
+    width:'22%',
+    height:'30%'
+  });
+
 }
 }
 function refresh() {

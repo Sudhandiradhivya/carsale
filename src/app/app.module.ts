@@ -67,8 +67,9 @@ import { ServiceAcceptedpageComponent } from './serviceAcceptedpage/serviceAccep
 import { SearchComponent } from './search/search.component';
 import { CountdownComponent } from './countdown/countdown.component';
 import { PayComponent } from './pay/pay.component';
+import { PasswordresetComponent } from './passwordreset/passwordreset.component';
 @NgModule({
-  declarations: [							
+  declarations: [								
     AppComponent,
       HomeComponent,
       AboutComponent,
@@ -112,7 +113,8 @@ import { PayComponent } from './pay/pay.component';
       ServiceAcceptedpageComponent,
       SearchComponent,
       CountdownComponent,
-      PayComponent
+      PayComponent,
+      PasswordresetComponent
    ],
   imports: [
     BrowserModule,
