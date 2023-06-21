@@ -18,11 +18,11 @@
         <label>Vehicle Number</label>
        </div>
        <div class="col-75">
-        <input type="text" placeholder="Enter Vehicle number" formControlName="vehicleNumber">
+        <input type="number" placeholder="Enter Vehicle number" formControlName="vehicleNumber">
        </div>
        <div class="validateError" *ngIf="serviceForm.controls['vehicleNumber'].dirty">
         <p class="error" *ngIf="serviceForm.controls['vehicleNumber'].errors?.['required']"><i class="fas fa-exclamation-circle"></i>vehicleNumber can't be blank</p>
-        <p class="error" *ngIf="serviceForm.controls['vehicleNumber'].errors?.['pattern']"><i class="fas fa-exclamation-circle"></i>Enter valid vehicleNumber </p>
+        <!-- <p class="error" *ngIf="serviceForm.controls['vehicleNumber'].errors?.['pattern']"><i class="fas fa-exclamation-circle"></i>Enter valid vehicleNumber </p> -->
       </div>
   </div><br>
     <div class="row">
@@ -46,7 +46,7 @@
       </div>
       <div class="validateError" *ngIf="serviceForm.controls['mileage'].dirty">
         <p class="error" *ngIf="serviceForm.controls['mileage'].errors?.['required']"><i class="fas fa-exclamation-circle"></i>Mileage can't be blank</p>
-        <p class="error" *ngIf="serviceForm.controls['mileage'].errors?.['pattern']"><i class="fas fa-exclamation-circle"></i>Enter valid mail-Id </p>
+        <!-- <p class="error" *ngIf="serviceForm.controls['mileage'].errors?.['pattern']"><i class="fas fa-exclamation-circle"></i>Enter valid mail-Id </p> -->
       </div>
     </div>
         <br>

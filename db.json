@@ -139,6 +139,13 @@
       "password": "Muthu@67",
       "confirmPassword": "Muthu@67",
       "id": 30
+    },
+    {
+      "username": "Monikashri",
+      "email": "moni@gmail.com",
+      "password": "Moni@78",
+      "confirmPassword": "Moni@78",
+      "id": 31
     }
   ],
   "products": [
@@ -313,6 +320,15 @@
       "email": "mani@gmail.com",
       "id": 31,
       "status": "Order Accepted"
+    },
+    {
+      "models": "",
+      "Title": "Ms",
+      "fname": "Monikashri",
+      "lname": "m",
+      "phonenumber": "7890675645",
+      "email": "moni@gmail.com",
+      "id": 32
     }
   ],
   "Images": [

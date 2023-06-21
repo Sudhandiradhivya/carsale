@@ -1,5 +1,7 @@
+<app-header></app-header>
 <body>
-  <div class="container">
+  <div class="container myform"  [ngClass]="formStatus">
+    <!-- <div class="container myform"  [ngClass]="formStatus"></div> -->
     <div class="forms">
         <div class="form signup">
           <span class="title">Registration</span>
@@ -17,16 +19,17 @@
               <div class="validateError" *ngIf="Registerforms.controls['email'].dirty">
                 <p class="error" *ngIf="Registerforms.controls['email'].errors?.['required']"><i class="fas fa-exclamation-circle"></i>Email can't be blank</p>
                 <p class="error" *ngIf="Registerforms.controls['email'].errors?.['pattern']"><i class="fas fa-exclamation-circle"></i>Enter valid mail-Id </p>
+                <p class="error" *ngIf="Registerforms.controls['email'].errors?.['this.emailNotAllowed']"><i class="fas fa-exclamation-circle"></i>Email invalid </p>
               </div>
               <div class="input-field">
-                  <input type="password"  placeholder="Enter a new password" id="valNewpass" formControlName="password" name="password" >
+                  <input type="password"  placeholder="Enter a new password"  formControlName="password" name="password" >
               </div>
               <div class="validateError" *ngIf="Registerforms.controls['password'].dirty">
                 <p class="error" *ngIf="Registerforms.controls['password'].errors?.['required']"><i class="fas fa-exclamation-circle"></i>Password can't be blank</p>
                 <p class="error" *ngIf="Registerforms.controls['password'].errors?.['pattern']"><i class="fas fa-exclamation-circle"></i>Enter valid password </p>
               </div>
               <div class="input-field">
-                <input type="password"  placeholder="Enter a new password" id="valNewpass" formControlName="confirmPassword" name="password" >
+                <input type="password"  placeholder="Enter a new password"  formControlName="confirmPassword" name="password" >
             </div>
             <div class="validateError" *ngIf="Registerforms.controls['confirmPassword'].dirty">
               <p class="error" *ngIf="Registerforms.controls['confirmPassword'].errors?.['required']"><i class="fas fa-exclamation-circle"></i>Password can't be blank</p>
@@ -45,5 +48,6 @@
       </div>
       </div>
       </div>
-      
+
 </body>
+<app-footer></app-footer>

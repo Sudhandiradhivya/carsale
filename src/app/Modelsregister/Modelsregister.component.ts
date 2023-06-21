@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { FormBuilder, PatternValidator, Validators } from '@angular/forms';
 import { ServiceService } from '../service.service';
 import { Router } from '@angular/router';
 import { MatDialogRef } from '@angular/material/dialog';

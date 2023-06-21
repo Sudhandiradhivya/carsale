@@ -171,6 +171,18 @@ body{
   color: red;
   margin-top: 4px;
 }
+.myform.INVALID{
+  border:red 1px solid;
+
+}
+.myform.VALID{
+  border:rgb(103, 240, 69) 1px solid;
+
+}
+.myform.PENDING{
+  border:rgb(212, 255, 0) 1px solid;
+
+}
 /* .container.active .login {
   margin-left: -50%;
   opacity: 0;
