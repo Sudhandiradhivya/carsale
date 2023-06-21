@@ -24,7 +24,7 @@ export class AngularRegisterComponent implements OnInit {
   Registerforms = this.fb.group(
     {
       username: [, [Validators.required, Validators.pattern('^[a-zA-Z]+$')]],
-      email: [,[Validators.required, Validators.pattern('^([a-z0-9.-]+)@([a-z0-9-]+).([a-z]{2,8})(.[a-z]{2,8})$')],this.emailNotAllowed],
+      email: [,[Validators.required, Validators.pattern('^([a-z0-9.-]+)@([a-z0-9-]+).([a-z]{2,8})(.[a-z]{2,8})$')]],
       password: [, [Validators.required,Validators.pattern('^[A-Z]{1}[a-z]+[@/!/#/$/%/&][0-9]{2,4}$')]],
       confirmPassword: [, [Validators.required,]],
     },
@@ -51,22 +51,22 @@ export class AngularRegisterComponent implements OnInit {
   }
 
   //custom Async validator
-  emailNotAllowed(control:FormControl):Promise<any> | Observable<any>{
-    const response=new Promise((resolve,reject)=>{
-      setTimeout(()=>{
-        if(control.value==='xxxxxxx@gmail.com'||control.value==='xx@gmail.com'||control.value==='@gmail.com'){
-          resolve({emailNotAllowed:true})
+  // emailNotAllowed(control:FormControl):Promise<any> | Observable<any>{
+  //   const response=new Promise((resolve,reject)=>{
+  //     setTimeout(()=>{
+  //       if(control.value==='xxxxxxx@gmail.com'||control.value==='xx@gmail.com'||control.value==='@gmail.com'){
+  //         resolve({emailNotAllowed:true})
 
-        }
-        else{
-          resolve(null);
-        }
-      },5000)
+  //       }
+  //       else{
+  //         resolve(null);
+  //       }
+  //     },5000)
 
-    });
-    return response;
+  //   });
+  //   return response;
 
-  }
+  // }
 }
 
 

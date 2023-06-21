@@ -1,6 +1,6 @@
 <app-header></app-header>
 <body>
-  <div class="container myform"  [ngClass]="formStatus">
+  <div class="container">
     <!-- <div class="container myform"  [ngClass]="formStatus"></div> -->
     <div class="forms">
         <div class="form signup">
@@ -19,7 +19,6 @@
               <div class="validateError" *ngIf="Registerforms.controls['email'].dirty">
                 <p class="error" *ngIf="Registerforms.controls['email'].errors?.['required']"><i class="fas fa-exclamation-circle"></i>Email can't be blank</p>
                 <p class="error" *ngIf="Registerforms.controls['email'].errors?.['pattern']"><i class="fas fa-exclamation-circle"></i>Enter valid mail-Id </p>
-                <p class="error" *ngIf="Registerforms.controls['email'].errors?.['this.emailNotAllowed']"><i class="fas fa-exclamation-circle"></i>Email invalid </p>
               </div>
               <div class="input-field">
                   <input type="password"  placeholder="Enter a new password"  formControlName="password" name="password" >
@@ -37,7 +36,7 @@
             </div>
 
               <div class="input-field button" >
-                  <button [disabled]="!Registerforms" type="submit" >Sign-up </button>
+                  <button type="submit" >Sign-up </button>
               </div>
           </form>
           <div class="login-signup">
