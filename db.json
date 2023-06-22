@@ -153,6 +153,13 @@
       "password": "Mohan@123",
       "confirmPassword": "Mohan@123",
       "id": 32
+    },
+    {
+      "username": "Vikash",
+      "email": "vikash@gmail.com",
+      "password": "Vikash@67",
+      "confirmPassword": "Vikash@67",
+      "id": 33
     }
   ],
   "products": [
@@ -316,16 +323,6 @@
       "phonenumber": "89789056",
       "email": "muthu@gmail.com",
       "id": 30,
-      "status": "Order Accepted"
-    },
-    {
-      "models": "Wraith",
-      "Title": "Mr",
-      "fname": "Manikandan",
-      "lname": "a",
-      "phonenumber": "7890567845",
-      "email": "mani@gmail.com",
-      "id": 31,
       "status": "Order Accepted"
     },
     {
