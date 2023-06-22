@@ -28,12 +28,16 @@ getServices:any;
 
 this.http.get<any>("http://localhost:3000/ServiceAcceptDetails").subscribe((services)=>{
    const service=services.find((s:any)=>{
-    return this.getlogged.email===s.email;
+   if(this.getlogged.email===s.email){
+    this.getServices=s;
+   }
    })
    if(service){
     this.getServices=service;
    }
+   console.log(this.getServices);
 })
+
 
     this.http.get<any>("http://localhost:3000/OrderAcceptedDetails").subscribe((data)=>{
 const values=data.find((b:any)=>
