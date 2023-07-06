@@ -46,7 +46,7 @@ OrdersForm=this.fb.group({
 
     }
       this.service.postOrderDetails(body).subscribe((data: any)=>{
-      alert('Form Submitted');
+      alert('Order Successfully');
       let close=document.getElementById("ref");
       close?.click()
 

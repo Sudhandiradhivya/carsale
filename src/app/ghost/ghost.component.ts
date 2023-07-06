@@ -59,8 +59,6 @@ this.cullinan();
   }
   cullinan(){
     this.service.content='Ghost';
-    // this.service.model=this.carModel;
-
   }
 ghostModels(value:any){
    this.service.model=value.discountPrice;

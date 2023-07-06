@@ -23,6 +23,18 @@ getCarModels(){
 getGhostModels(){
    return this.http.get("http://localhost:3000/Ghostmodels");
 }
+getCullinanModels(){
+  return this.http.get("http://localhost:3000/Cullinanmodels");
+}
+getPhantomModels(){
+  return this.http.get("http://localhost:3000/PhantomModels");
+}
+getWraithModels(){
+  return this.http.get(" http://localhost:3000/WraithModels");
+}
+getDawnModels(){
+  return this.http.get("http://localhost:3000/DawnModels");
+}
 content:any='';
 model:any='';
 }

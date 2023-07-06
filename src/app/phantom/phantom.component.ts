@@ -9,8 +9,12 @@ import { ServiceService } from '../service.service';
   styleUrls: ['./phantom.component.css']
 })
 export class PhantomComponent implements OnInit {
-
-  constructor(private dialog:MatDialog,private service:ServiceService) { }
+carModel:any;
+  constructor(private dialog:MatDialog,private service:ServiceService) {
+    this.service.getPhantomModels().subscribe((data)=>{
+      this.carModel=data;
+   });
+   }
 
   ngOnInit() {
   }
@@ -27,7 +31,10 @@ export class PhantomComponent implements OnInit {
   ghost(event: any){
       this.content = event.target.src;
   }
-  openDialog() {
+  openDialog(details:any) {
+    console.log(details);
+    this.service.content=details.name;
+    this.service.model=details.discountPrice?details.discountPrice:details.price;
     this.dialog.open(ModelsregisterComponent, {
       width:'35%',
       height:'65%'

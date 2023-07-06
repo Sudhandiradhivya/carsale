@@ -193,23 +193,15 @@
   ],
   "Modelsregister": [
     {
-      "models": "Wraith",
+      "models": "Ghost",
       "Title": "Mrs",
-      "fname": "brintha",
+      "fname": "Mithra",
       "lname": "v",
-      "phonenumber": "7890675678",
-      "email": "brintha@gmail.com",
+      "phonenumber": "7890897890",
+      "email": "mithra@gmail.com",
+      "payment": 120000,
       "id": 1,
       "status": "Order Accepted"
-    },
-    {
-      "models": "Ghost",
-      "Title": "Mr",
-      "fname": "brintha",
-      "lname": "v",
-      "phonenumber": "6789086756",
-      "email": "brintha@gmail.com",
-      "id": 2
     }
   ],
   "Images": [
@@ -415,6 +407,15 @@
       "model": "Wraith",
       "status": "Order Accepted",
       "id": 134
+    },
+    {
+      "fname": "Mithra",
+      "lname": "v",
+      "mobile": "7890897890",
+      "email": "mithra@gmail.com",
+      "model": "Ghost",
+      "status": "Order Accepted",
+      "id": 135
     }
   ],
   "GenanerateBills": [
@@ -1035,6 +1036,174 @@
       "discountPrice": 240000,
       "items_left": 7,
       "imageUrl": "https://www.pngmart.com/files/22/Rolls-Royce-Ghost-PNG-Picture.png",
+      "expired": false
+    }
+  ],
+  "Cullinanmodels": [
+    {
+      "id": 1,
+      "name": "Cullinan",
+      "color": [
+        "White",
+        "Blue",
+        "Black"
+      ],
+      "price": 740000,
+      "discountPrice": 520000,
+      "items_left": 7,
+      "imageUrl": "https://www.pngmart.com/files/22/Rolls-Royce-Cullinan-PNG-Picture.png",
+      "expired": false
+    },
+    {
+      "id": 2,
+      "name": "Cullinan",
+      "color": [
+        "White",
+        "Blue",
+        "Black"
+      ],
+      "price": 5500000,
+      "items_left": 8,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPq0VejsUN0Ng5i-aSouRCMyZOEP17yP1eOQ&usqp=CAU"
+    },
+    {
+      "id": 3,
+      "name": "Cullinan",
+      "color": [
+        "White",
+        "Blue",
+        "Black"
+      ],
+      "price": 840000,
+      "discountPrice": 340000,
+      "items_left": 7,
+      "imageUrl": "https://imgd.aeplcdn.com/370x208/n/bqopqsa_1477518.jpg?q=75",
+      "expired": false
+    }
+  ],
+  "WraithModels":[
+    {
+      "id": 1,
+      "name": "Wraith",
+      "color": [
+        "White",
+        "Blue",
+        "Black"
+      ],
+      "price": 740000,
+      "discountPrice": 520000,
+      "items_left": 7,
+      "imageUrl": "https://www.pngmart.com/files/22/Rolls-Royce-Wraith-PNG-Photo.png",
+      "expired": false
+    },
+    {
+      "id": 2,
+      "name": "Wraith",
+      "color": [
+        "White",
+        "Blue",
+        "Black"
+      ],
+      "price": 5500000,
+      "items_left": 8,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYjgmOm4Al95khdvg9n4RrDXwBT-y4LoRNL6_pz4L7VqQi6FqZMN6y4cMgjgSC0j1SBq0&usqp=CAU"
+    },
+    {
+      "id": 3,
+      "name": "Wraith",
+      "color": [
+        "White",
+        "Blue",
+        "Black"
+      ],
+      "price": 840000,
+      "discountPrice": 340000,
+      "items_left": 7,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdt-sNlq3QY79DGlI5XrOFg4J9cbsLxFfgKuvIOaqi8G-b_gcAcJrwD_6fqCm60k6e_lA&usqp=CAU",
+      "expired": false
+    }
+  ],
+  "PhantomModels":[
+    {
+      "id": 1,
+      "name": "Wraith",
+      "color": [
+        "White",
+        "Blue",
+        "Black"
+      ],
+      "price": 680000,
+      "discountPrice": 520000,
+      "items_left": 7,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9zgOjOrTYMThQa8cGJQS-CN_wrkf2XbDbuMq1R-fNp-06TUR4pP14RJM8fZYy1wAj2cs&usqp=CAU",
+      "expired": false
+    },
+    {
+      "id": 2,
+      "name": "Wraith",
+      "color": [
+        "White",
+        "Blue",
+        "Black"
+      ],
+      "price": 6500000,
+      "items_left": 8,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToWs7tO5kyiJp7cCLosyIZ2FXVYOrGPXZNslAtMH5oI7HxObIIWBXPCKZUgB1p_17e_Uw&usqp=CAU"
+    },
+    {
+      "id": 3,
+      "name": "Wraith",
+      "color": [
+        "White",
+        "Blue",
+        "Black"
+      ],
+      "price": 740000,
+      "discountPrice": 340000,
+      "items_left": 7,
+      "imageUrl": "https://png.pngitem.com/pimgs/s/172-1725134_2019-rolls-royce-ghost-2018-rolls-royce-ghost.png",
+      "expired": false
+    }
+  ],
+  "DawnModels":[
+    {
+      "id": 1,
+      "name": "Dawn",
+      "color": [
+        "White",
+        "Blue",
+        "Black"
+      ],
+      "price": 880000,
+      "discountPrice": 720000,
+      "items_left": 7,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr24L6AsH4TCZmxnoDkkktlXcUGtHh1iQCIY3Ii5j-NtlYaz9EGMLqw8cGWpJoUrvyX2M&usqp=CAU",
+      "expired": false
+    },
+    {
+      "id": 2,
+      "name": "Dawn",
+      "color": [
+        "White",
+        "Blue",
+        "Black"
+      ],
+      "price": 8500000,
+      "items_left": 8,
+      "imageUrl": "https://www.cars.com/i/large/in/v2/stock_photos/100c9df8-8116-4d82-8fa4-90c67caa150f/07b48ed0-b3f7-46ac-8992-6440f4883a06.png"
+    },
+    {
+      "id": 3,
+      "name": "Dawn",
+      "color": [
+        "White",
+        "Blue",
+        "Black"
+      ],
+      "price": 800000,
+      "discountPrice": 540000,
+      "items_left": 7,
+      "imageUrl": "https://www.pngitem.com/pimgs/m/175-1751222_rolls-royce-dawn-2020-hd-png-download.png",
       "expired": false
     }
   ]

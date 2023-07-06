@@ -14,7 +14,7 @@ import { OrderAcceptedPageComponent } from '../OrderAcceptedPage/OrderAcceptedPa
 })
 export class OrderDetailsComponent implements OnInit {
 
-  displayedColumns: string[] = ['id','models','fname', 'lname','email','phonenumber','action'];
+  displayedColumns: string[] = ['models','fname','email','phonenumber','payment','action'];
   dataSource!: MatTableDataSource<any>;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
@@ -77,7 +77,7 @@ a(value:any){
     "status":"Order Accepted"
   }
   this.http.patch<any>("http://localhost:3000/Modelsregister/"+value.id,body).subscribe(()=>{
-    alert("patch successfully");
+    // alert("patch successfully");
 
   })
 }
@@ -89,7 +89,7 @@ openDialog(value:any) {
     height:'65%',
 
   });
- 
+
 }
 
 
