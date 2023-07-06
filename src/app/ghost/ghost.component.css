@@ -653,7 +653,7 @@ transform: scale(1.08);
   background-color: #fff;
   /* width: 30%; */
   display: grid;
-  grid-template-columns: repeat(3, 1fr) ;
+  grid-template-columns: repeat(3,1fr);
 }
 
 /* .row{
@@ -880,7 +880,7 @@ position: absolute;
   margin-right: 6px;
 }
 
-.card-content .price-old {
+ .price-old {
   line-height: 18px;
   display: inline-block;
   text-decoration: line-through;

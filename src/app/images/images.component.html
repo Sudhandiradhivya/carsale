@@ -44,6 +44,20 @@
 }" ><a routerLink="/About" fragment="popup">Back</a></button>
 </div>
 
+
+
+<!-- <h3>Product Cart Timer: {{ timer }}</h3>
+<div *ngIf="offerStatus" class="offerStatus">
+  <marquee behavior="scroll" direction="left">
+<div class="flex-text">
+  <p class="dancing-text">Offer is live now</p>
+
+</div>
+</marquee>
+</div> -->
+
+
+
 <h2 style="margin-left: 4%;margin-top: 3%; font-size: 28px;" id="Images">Images</h2>
 
 <h4 style="margin-left: 4%;">Total Models Images:{{" "}}{{TotalModels | async}}</h4>
@@ -54,8 +68,8 @@
     <div class="add--to--wishlist">
       <i class="fa fa-heart-o"></i>
     </div>
-    <div class="sale-tag" *ngIf="product.discountPrice">
-      {{(((product.price-product.discountPrice)/product.price)*100).toFixed(0)}}%OFF</div>
+    <!-- <div class="sale-tag" *ngIf="product.discountPrice">
+      {{(((product.price-product.discountPrice)/product.price)*100).toFixed(0)}}%OFF</div> -->
    </div>
   <div class="product-image">
       <img [src]="product.imageUrl" class="product--image">
@@ -71,7 +85,7 @@
   <div class="product--category">Items-left:{{product.items_left}}</div>
   <div class="product--available-colors">$COLORCOUNT {{product.color.length}} . Best Seller</div>
 
-  <!-- <button style="margin-left: 60px;margin-top: 20px;">Show more Details</button> -->
+  <!-- <button style="margin-left: 60px;margin-top: 20px;text-decoration: none;" id="button1"><a routerLink="/Models" >Show more Details</a></button> -->
 </div>
 
 </div>

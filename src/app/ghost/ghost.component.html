@@ -4,6 +4,16 @@
 
 
 <app-header></app-header>
+<!-- <div *ngIf="offerStatus" class="offerStatus">
+  <marquee behavior="scroll" direction="left">
+<div class="flex-text">
+  <p class="dancing-text">Offer is live now</p>
+  <p class="dancing-text">Offer is live now</p>
+  <p class="dancing-text">Offer is live now</p>
+</div>
+</marquee>
+</div> -->
+
 
 <section class="bg-color">
   <div class="container">
@@ -295,21 +305,18 @@
 
 
 
-    <div class="row">
-      <div class="columns">
-      <div class="col-3">
+ <div class="row">
+    <div class="columns">
+      <div class="col-3"  >
+<div class="entire" *ngFor="let product of carModel">
           <div class="card">
-            <div class="card-main">
-           <div class="discount">-10%</div>
-           <div class="order order-color">
-            <a  class="preorder" (click)="openDialog()">Order</a></div>
-           <div class="product-container">
-            <div class="p" (mouseover)="imageChange($event)"><img src="../../assets/g1-b.png" alt="product"></div>
-            <div class="p" (mouseover)="imageChange($event)"><img src="../../assets/g2-b.png"  alt="product"></div>
-            <div class="p" (mouseover)="imageChange($event)"><img src="../../assets/g3-b.png" alt="product"></div>
-           </div>
+              <div class="card-main">
+            <div class="discount" *ngIf="product.discountPrice">
+              {{(((product.price-product.discountPrice)/product.price)*100).toFixed(0)}}%OFF</div>
+            <div class="order order-color">
+              <a  class="preorder" (click)="openDialog(product)">Order</a></div>
            <div class="image-container">
-            <img src="{{url}}" alt="Product">
+            <img [src]=product.imageUrl alt="Product">
            </div>
 
              <div class="cart-line"></div>
@@ -331,88 +338,15 @@
             <i class='far'>&#xf005;</i>
             <i class='far'>&#xf005;</i>
           </div>
-        <p><span class="money">$59Cr</span><span class="price-old">$89Cr</span></p>
-            </div>
-           </div>
+        <p><span class="money">{{product.discountPrice? product.discountPrice:product.price}}</span>
+          <span class="price-old">{{product.discountPrice?product.price:product.discountPrice}}</span></p>
 
-           <div class="card">
-            <div class="card-main">
-           <div class="discount">-20%</div>
-           <div class="order order-color">
-            <a  class="preorder" (click)="openDialog()">Order</a></div>
-           <div class="product-container">
-            <div class="p" (mouseover)="Change($event)"><img src="../../assets/g4-w.jpg" alt="product"></div>
-            <div class="p" (mouseover)="Change($event)"><img src="../../assets/g5-w.png"  alt="product"></div>
-            <div class="p" (mouseover)="Change($event)"><img src="../../assets/g6-w.jpg" alt="product"></div>
-           </div>
-           <div class="image-container">
-            <img src="{{image}}" alt="Product">
-           </div>
-
-        <div class="cart-line"></div>
-              <div class="cart-item">
-                    <ul>
-                      <li><a href=""><i class="fa fa-shopping-basket"></i></a></li>
-                      <li><a href=""><i class="fa fa-heart"></i></a></li>
-                      <li><a href=""><i class="fa fa-search"></i></a></li>
-                    </ul>
-              </div>
-            </div>
-
-      <div class="card-content">
-          <a href="">Rolls-Royce Ghost</a>
-          <div class="rating" style="color: rgb(255, 136, 0);" >
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class='far'>&#xf005;</i>
-            <i class='far'>&#xf005;</i>
-          </div>
-        <p><span class="money">$67Cr</span><span class="price-old">$87Cr</span></p>
-            </div>
-           </div>
-
-           <div class="card">
-            <div class="card-main">
-           <div class="discount">-30%</div>
-           <div class="order order-color">
-            <a  class="preorder" (click)="openDialog()"> Order</a>
-          </div>
-           <div class="product-container">
-            <div class="p" (mouseover)="ghost($event)"><img src="../../assets/g7-b.png" alt="product"></div>
-            <div class="p" (mouseover)="ghost($event)"><img src="../../assets/g8-b.jpg"  alt="product"></div>
-            <div class="p" (mouseover)="ghost($event)"><img src="../../assets/g9-b.png" alt="product"></div>
-           </div>
-           <div class="image-container">
-            <img src="{{content}}" alt="Product">
-           </div>
-
-        <div class="cart-line"></div>
-              <div class="cart-item">
-                    <ul>
-                      <li><a href=""><i class="fa fa-shopping-basket"></i></a></li>
-                      <li><a href=""><i class="fa fa-heart"></i></a></li>
-                      <li><a href=""><i class="fa fa-search"></i></a></li>
-                    </ul>
-              </div>
-            </div>
-
-      <div class="card-content">
-          <a href="">Rolls-Royce Ghost</a>
-          <div class="rating" style="color: rgb(255, 136, 0);" >
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class='far'>&#xf005;</i>
-            <i class='far'>&#xf005;</i>
-          </div>
-        <p><span class="money">$89Cr</span><span class="price-old">$99Cr</span></p>
             </div>
            </div>
       </div>
     </div>
 
-
+  </div>
       </div>
 
 

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServiceService } from '../service.service';
 
 @Component({
   selector: 'app-Home',
@@ -7,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  offerStatus=false;
+  models: any='';
+
+  constructor(private service:ServiceService) {
+    this.service.getCarModels().subscribe(data=>{
+          this.models=data;
+    });
+    this.offerStatus = localStorage.getItem('offerStatus') === 'true';
+   }
 
   ngOnInit() {
   }
@@ -24,5 +33,7 @@ export class HomeComponent implements OnInit {
   offer(){
     location.pathname = ('/Models');
   }
+
+
 
 }

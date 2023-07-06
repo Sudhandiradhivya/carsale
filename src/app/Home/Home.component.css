@@ -1,3 +1,6 @@
+.offerStatus{
+display: flex;
+}
 .headline {
   margin-top: 80px;
   position: relative;
@@ -95,7 +98,7 @@ button:hover{
   width: 30%;
   font-family: 'Zeyada', cursive;
   position: fixed;
-  
+
 }
 
 .up-content{

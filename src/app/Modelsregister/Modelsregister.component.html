@@ -67,8 +67,13 @@
               <option value="Wraith"style="color: black;">Wraith</option>
               <option value="Dawn"style="color: black;">Dawn</option>
             </select> -->
-            <div class="inputs">
+            <!-- <div class="inputs">
               <span style="margin-left: 20px;font-size: 18px;font-weight: bold;">{{selectmodels}}</span>
+            </div> -->
+
+            <div class="inputs">
+              <!-- <p style="margin-left: 20px;font-size: 18px;font-weight: bold;">{{Price}}</p> -->
+              <input type="text" formControlName="models" >
             </div>
       </div>
 
@@ -93,6 +98,10 @@
         </div>
         <div class="inputs">
           <input type="email" placeholder="Email" formControlName="email">
+        </div>
+        <div class="inputs">
+          <!-- <p style="margin-left: 20px;font-size: 18px;font-weight: bold;">{{Price}}</p> -->
+          <input type="number" formControlName="payment" >
         </div>
   </div>
       <div class="butt2" style="margin-top: 29%;">

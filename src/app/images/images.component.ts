@@ -21,12 +21,14 @@ export class ImagesComponent implements OnInit {
   DetailService: any;
   news:any;
   reviews:any;
+  offerStatus:boolean=true;
   constructor(private service:DetailServiceService,private activateRoute:ActivatedRoute) { }
   getLoginvalue:any=" ";
    ngOnInit() {
      this.getImagesList();
      this.getNewsList();
      this.getReviewList();
+     this.startTimer();
      this.activateRoute.fragment.subscribe((value)=>{
           console.log(value);
           this.jumpTo(value);
@@ -164,7 +166,7 @@ export class ImagesComponent implements OnInit {
     ];
 
     Total=this.models;
-  
+
 
    TotalModels=new Promise((resolve,reject)=>{
     setTimeout(()=>{
@@ -181,5 +183,29 @@ export class ImagesComponent implements OnInit {
   }
 
 
+  timer!: number;
+  startTimer() {
+    this.timer = 5; // Set the initial timer value
+
+    setInterval(() => {
+      if (this.timer > 0) {
+        this.timer--;
+      } else {
+        this.removeExpiredProduct(); // Call the method to remove expired products
+      }
+    }, 1000); // Decrease timer every 1 second (1000 milliseconds)
+  }
+
+  removeExpiredProduct() {
+  //   const expiredProductIndex = this.models.findIndex(Total =>
+  //   this.models.find((value)=>{value.discountPrice})?true:false);
+  //   if (expiredProductIndex > -1) {
+  // this.models.splice(expiredProductIndex, 1);
+
+
+  //   }
+ this.models
+  }
 
 }
+

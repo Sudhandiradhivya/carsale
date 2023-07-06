@@ -10,10 +10,28 @@ import { ServiceService } from '../service.service';
 })
 export class GhostComponent implements OnInit {
 
+offerStatus=true;
+carModel:any;
 
-  constructor(private dialog:MatDialog,private service:ServiceService) { }
+  constructor(private dialog:MatDialog,private service:ServiceService) {
+    this.service.getGhostModels().subscribe((data)=>{
+   this.carModel=data;
+   //console.log(this.carModel)
+//  this.ghostModels(this.carModel);
+
+
+ });
+    // this.offerStatus=localStorage.getItem('offerstatus')==='true';
+
+
+
+
+   }
+
+
 
   ngOnInit() {
+
   }
   url: string = "../../assets/g1-b.png";
   imageChange(event: any){
@@ -27,14 +45,26 @@ export class GhostComponent implements OnInit {
   ghost(event: any){
       this.content = event.target.src;
   }
-  openDialog() {
+  openDialog(details:any) {
+    console.log(details);
+    this.service.content=details.name;
+    this.service.model=details.discountPrice?details.discountPrice:details.price;
+
     this.dialog.open(ModelsregisterComponent, {
       width:'35%',
       height:'65%'
     });
 this.cullinan();
+
   }
   cullinan(){
     this.service.content='Ghost';
+    // this.service.model=this.carModel;
+
   }
+ghostModels(value:any){
+   this.service.model=value.discountPrice;
+   console.log(this.service.model);
+}
+
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ModelService } from '../Model.service';
+import { ServiceService } from '../service.service';
 
 @Component({
   selector: 'app-Models',
@@ -10,7 +11,7 @@ export class ModelsComponent implements OnInit {
 
 
   getProduct:any;
-  constructor(private service:ModelService) {
+  constructor(private service:ModelService,private carModel:ServiceService) {
     this.service.getModel().subscribe(data=>{
       this.getProduct=data;
     });
@@ -24,6 +25,8 @@ name5:string='R R Dawn';
 
 
   ngOnInit() {
+    
   }
+
 
 }

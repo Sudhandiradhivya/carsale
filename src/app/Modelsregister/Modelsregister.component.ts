@@ -17,17 +17,22 @@ retUrl:any;
 constructor(private fb:FormBuilder, private service:ServiceService,private route:Router) { }
 
 OrdersForm=this.fb.group({
-
+   models:[,[Validators.required]],
     Title:[,[Validators.required]],
     fname:[,[Validators.required]],
     lname:[,[Validators.required]],
     phonenumber:[,[Validators.required]],
-    email:[,[Validators.required]]
+    email:[,[Validators.required]],
+    payment:[,[Validators.required]]
   })
 
   selectmodels=this.service.content;
+  Price=this.service.model;
+  Models=this.service.model;
   ngOnInit() {
-  console.log(this.selectmodels);
+    this.OrdersForm.controls['models'].setValue(this.service.content)
+     this.OrdersForm.controls['payment'].setValue(this.service.model)
+
   }
   formRegister() {
     var body={
@@ -36,8 +41,8 @@ OrdersForm=this.fb.group({
       "fname":this.OrdersForm.value.fname,
       "lname":this.OrdersForm.value.lname,
       "phonenumber":this.OrdersForm.value.phonenumber,
-      "email":this.OrdersForm.value.email
-
+      "email":this.OrdersForm.value.email,
+      "payment":this.Price
 
     }
       this.service.postOrderDetails(body).subscribe((data: any)=>{
