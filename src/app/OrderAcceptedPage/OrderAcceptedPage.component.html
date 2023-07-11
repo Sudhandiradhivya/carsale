@@ -74,13 +74,13 @@
           <input type="text" placeholder="Model" [value]="generate.models">
         </div>
         <div class="inputs">
-          <input type="" placeholder="" formControlName="amount" >
+          <input type="" placeholder="" [value]="generate.payment">
         </div>
   </div>
 
       <div class="butt2" style="margin-top: 29%;">
         <div mat-dialog-action [align]="'end'">
-          <button mat-raised-button color="primary" (click)="orders()" [disabled]="!OrdersForm.controls['amount'].value">Submit</button>
+          <button mat-raised-button color="primary" (click)="orders()">Submit</button>
           <button style="margin-right: 8px;margin-left: 8px;" mat-raised-button color="warn" mat-dialog-close id="cancel">Cancel</button>
 
         </div>

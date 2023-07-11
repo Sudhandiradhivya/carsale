@@ -55,6 +55,20 @@
       "password": "Mithra@56",
       "confirmPassword": "Mithra@56",
       "id": 37
+    },
+    {
+      "username": "Vishnu",
+      "email": "vishnu@gmail.com",
+      "password": "Vishnu@67",
+      "confirmPassword": "Vishnu@67",
+      "id": 38
+    },
+    {
+      "username": "Muthu",
+      "email": "muthu@gmail.com",
+      "password": "Muthu@56",
+      "confirmPassword": "Muthu@56",
+      "id": 39
     }
   ],
   "products": [
@@ -183,6 +197,15 @@
       "branch": "Salem",
       "service": "Brakes and Brakes Repair",
       "id": 4
+    },
+    {
+      "custId": 7890,
+      "vehicleNumber": 434345,
+      "mileage": 568,
+      "email": "muthu@gmail.com",
+      "branch": "Madurai",
+      "service": "Oil Change",
+      "id": 5
     }
   ],
   "adminDetails": [
@@ -195,12 +218,45 @@
     {
       "models": "Ghost",
       "Title": "Mrs",
-      "fname": "Mithra",
-      "lname": "v",
-      "phonenumber": "7890897890",
-      "email": "mithra@gmail.com",
+      "fname": "Vishnu",
+      "lname": "A",
+      "phonenumber": "6789708976",
+      "email": "vishnu@gmail.com",
       "payment": 120000,
-      "id": 1,
+      "id": 2,
+      "status": "Order Accepted"
+    },
+    {
+      "models": "Wraith",
+      "Title": "Mr",
+      "fname": "Vishnu",
+      "lname": "A",
+      "phonenumber": "7890678970",
+      "email": "vishnu@gmail.com",
+      "payment": 5500000,
+      "id": 3,
+      "status": "Order Accepted"
+    },
+    {
+      "models": "Wraith",
+      "Title": "Mrs",
+      "fname": "Vikashini",
+      "lname": "M",
+      "phonenumber": "6789097890",
+      "email": "vikashni@gmail.com",
+      "payment": 5500000,
+      "id": 4,
+      "status": "Order Accepted"
+    },
+    {
+      "models": "Wraith",
+      "Title": "Mr",
+      "fname": "Muthu",
+      "lname": "G",
+      "phonenumber": "7890897867",
+      "email": "muthu@gmail.com",
+      "payment": 340000,
+      "id": 5,
       "status": "Order Accepted"
     }
   ],
@@ -416,6 +472,65 @@
       "model": "Ghost",
       "status": "Order Accepted",
       "id": 135
+    },
+    {
+      "fname": "Vishnu",
+      "lname": "A",
+      "mobile": "6789708976",
+      "email": "vishnu@gmail.com",
+      "model": "Ghost",
+      "status": "Order Accepted",
+      "id": 136
+    },
+    {
+      "fname": "Vishnu",
+      "lname": "A",
+      "mobile": "7890678970",
+      "email": "vishnu@gmail.com",
+      "model": "Wraith",
+      "payment": 5500000,
+      "status": "Order Accepted",
+      "id": 137
+    },
+    {
+      "fname": "Vikashini",
+      "lname": "M",
+      "mobile": "6789097890",
+      "email": "vikashni@gmail.com",
+      "model": "Wraith",
+      "payment": 5500000,
+      "status": "Order Accepted",
+      "id": 138
+    },
+    {
+      "fname": "Muthu",
+      "lname": "G",
+      "mobile": "7890897867",
+      "email": "muthu@gmail.com",
+      "model": "Wraith",
+      "payment": 340000,
+      "status": "Order Accepted",
+      "id": 139
+    },
+    {
+      "fname": "Muthu",
+      "lname": "G",
+      "mobile": "7890897867",
+      "email": "muthu@gmail.com",
+      "model": "Wraith",
+      "payment": 340000,
+      "status": "Order Accepted",
+      "id": 140
+    },
+    {
+      "fname": "Muthu",
+      "lname": "G",
+      "mobile": "7890897867",
+      "email": "muthu@gmail.com",
+      "model": "Wraith",
+      "payment": 340000,
+      "status": "Order Accepted",
+      "id": 141
     }
   ],
   "GenanerateBills": [
@@ -747,6 +862,20 @@
       "email": "brintha@gmail.com",
       "amount": "7000000",
       "id": 45
+    },
+    {
+      "fname": "Muthu",
+      "lname": "G",
+      "email": "muthu@gmail.com",
+      "amount": 340000,
+      "id": 46
+    },
+    {
+      "fname": "Muthu",
+      "lname": "G",
+      "email": "muthu@gmail.com",
+      "amount": 340000,
+      "id": 47
     }
   ],
   "ExampleImages": [
@@ -863,6 +992,34 @@
       "vehicleNumber": 5349458,
       "status": "Service Accepted",
       "id": 6
+    },
+    {
+      "email": "muthu@gmail.com",
+      "branch": "Madurai",
+      "vehicleNumber": 434345,
+      "status": "Service Accepted",
+      "id": 7
+    },
+    {
+      "email": "muthu@gmail.com",
+      "branch": "Madurai",
+      "vehicleNumber": 434345,
+      "status": "Service Accepted",
+      "id": 8
+    },
+    {
+      "email": "muthu@gmail.com",
+      "branch": "Madurai",
+      "vehicleNumber": 434345,
+      "status": "Service Accepted",
+      "id": 9
+    },
+    {
+      "email": "muthu@gmail.com",
+      "branch": "Madurai",
+      "vehicleNumber": 434345,
+      "status": "Service Accepted",
+      "id": 10
     }
   ],
   "carmodels": [
@@ -1081,7 +1238,7 @@
       "expired": false
     }
   ],
-  "WraithModels":[
+  "WraithModels": [
     {
       "id": 1,
       "name": "Wraith",
@@ -1123,7 +1280,7 @@
       "expired": false
     }
   ],
-  "PhantomModels":[
+  "PhantomModels": [
     {
       "id": 1,
       "name": "Wraith",
@@ -1165,7 +1322,7 @@
       "expired": false
     }
   ],
-  "DawnModels":[
+  "DawnModels": [
     {
       "id": 1,
       "name": "Dawn",

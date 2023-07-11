@@ -12,7 +12,7 @@
   </mat-form-field>
   <h5 style="font-size: 30px;margin-top:20%;padding:10px;font-family: poppins;">Service Settings</h5>
   <mat-form-field appearance="fill" style="width: 90%;margin-top: 10px;color: green;margin-left: 20px;">
-    <mat-label>Status</mat-label>
+    <mat-label>Status</mat-label>{{getServices.status}}
     <input matInput placeholder="">
   </mat-form-field>
 </div>
@@ -35,8 +35,8 @@
     </mat-form-field>
     <mat-form-field appearance="fill" style="width: 70%;margin-top: 10px;margin-left: 30px;">
       <mat-label>Payment</mat-label>
-      <input matInput placeholder="">{{payment.amount}}
-      <button mat-button color="primary" style="margin-left: 30px;"  (click)="openDialog()" [disabled]="(payment.amount)=='' ||payment.amount==null">Pay</button>
+      <input matInput placeholder="">{{acceptdetails.payment}}
+      <button mat-button color="primary" style="margin-left: 30px;"  (click)="openDialog()" [disabled]="(acceptdetails.payment)=='' ||acceptdetails.payment==null">Pay</button>
     </mat-form-field>
 
   </p>

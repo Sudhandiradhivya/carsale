@@ -50,4 +50,5 @@ getExampleImage():Observable<any>{
 }
 billGenerate:any;
 value:any;
+carmodels:any;
 }

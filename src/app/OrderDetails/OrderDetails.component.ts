@@ -62,6 +62,7 @@ open(value:any){
     "mobile":value.phonenumber,
     "email":value.email,
     "model":value.models,
+    "payment":value.payment,
     "status":"Order Accepted"
   }
   this.http.post<any>("http://localhost:3000/OrderAcceptedDetails",body).subscribe(()=>{
@@ -69,7 +70,7 @@ open(value:any){
 
   });
   this.a(value);
-
+this.DetailService.carmodels=value;
 
 }
 a(value:any){

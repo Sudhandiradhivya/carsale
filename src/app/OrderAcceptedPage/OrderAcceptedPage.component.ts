@@ -24,12 +24,13 @@ retUrl:any;
     phonenumber:[,[Validators.required]],
     email:[,[Validators.required]],
     models:[,[Validators.required]],
-    amount:[,[Validators.required]]
+    payment:[,[Validators.required]]
   })
   generate:any='';
+
   ngOnInit() {
     this.generate=this.detailService.billGenerate
-
+    this.http.get<any>("http://localhost:3000/Modelsregister").subscribe
   }
   formRegister() {
       this.service.postOrderDetails(this.OrdersForm.value).subscribe((data: any)=>{
@@ -52,7 +53,7 @@ retUrl:any;
      "lname":this.detailService.billGenerate.lname,
      "mobile":this.detailService.billGenerate.mobile,
      "email":this.detailService.billGenerate.email,
-     "amount":this.OrdersForm.value.amount
+     "amount":this.detailService.billGenerate.payment
   }
 
 
@@ -63,7 +64,7 @@ retUrl:any;
     close?.click();
 
   });
-  
+
  }
 
 

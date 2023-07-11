@@ -16,7 +16,7 @@ values: any;
 getlogged:any="";
 acceptdetails:any="";
 payment:any="";
-getServices:any;
+getServices:any="";
   ngOnInit() {
     const logged=sessionStorage.getItem('user');
     if(logged){
@@ -27,16 +27,20 @@ getServices:any;
 
 
 this.http.get<any>("http://localhost:3000/ServiceAcceptDetails").subscribe((services)=>{
-   const service=services.find((s:any)=>{
-   if(this.getlogged.email===s.email){
-    this.getServices=s;
-   }
+   const service=services.find((s:any)=>
+   {
+  this.getlogged.email===s.email;
    })
+   console.log(service);
    if(service){
     this.getServices=service;
+    console.log("val"+this.getServices);
    }
-   console.log(this.getServices);
+
 })
+
+
+
 
 
     this.http.get<any>("http://localhost:3000/OrderAcceptedDetails").subscribe((data)=>{
@@ -59,6 +63,9 @@ this.http.get<any>("http://localhost:3000/GenanerateBills").subscribe((bill)=>{
 })
 
   }
+
+
+
 getId(values:any){
   this.http.get<any>("http://localhost:3000/OrderAcceptedDetails/"+values.id).subscribe((data)=>{
     this.acceptdetails=data;
