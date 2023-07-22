@@ -1,0 +1,19 @@
+<div class="searchbar">
+<div class="search" >
+  <input  (input)="onchange($event)" [(ngModel)]="searchValue" (input)="onSearchValueChanged()" >
+  <button [disabled]="name==''"
+  style="
+  margin-top: 50px;
+  padding: 10px;
+   height: 40px;
+   width: 5%;
+   border: rgb(169, 166, 166) inline;
+   color: white;
+
+   ">Search</button>
+</div>
+<div class="search-for" style="display: flex;margin: 10px;">
+  <strong *ngIf="name!=''">Search for:</strong><p>{{' '+name}}</p>
+
+</div>
+</div>

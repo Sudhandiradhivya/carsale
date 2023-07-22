@@ -1,0 +1,19 @@
+.searchbar .search{
+  display: flex;
+}
+.searchbar .search input{
+   margin-left: 16%;
+   margin-top: 50px;
+   padding: 10px;
+   height: 20px;
+   width: 40%;
+   border: rgb(162, 160, 160) groove;
+   border-radius: 5px;
+   font-size: 15px;
+}
+.search-for strong{
+  margin-left: 50px;
+  margin-top: 10px;
+  font-family: poppins;
+  font-size: 16px;
+}

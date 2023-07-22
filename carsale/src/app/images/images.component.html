@@ -1,0 +1,151 @@
+<app-header></app-header>
+<div class="totalcontent">
+
+<div class="headline" style="margin-top: 13%;margin: 20px;">
+ <button [ngStyle]="{'margin.px': 20,
+ 'padding.px': 10,
+ 'width.px': 100,
+ 'border': 'none',
+ 'color':'white',
+ 'background-color':'RGB(214, 80, 118)',
+ 'border-radius.px':5,
+ 'font-size.px':15,
+  'font-weight':500
+}" ><a routerLink="/images" fragment="Images">Images</a></button>
+<button [ngStyle]="{'margin.px': 20,
+ 'padding.px': 10,
+ 'width.px': 100,
+ 'border': 'none',
+ 'color':'white',
+ 'background-color':'RGB(214, 80, 118)',
+ 'border-radius.px':5,
+ 'font-size.px':15,
+  'font-weight':500
+}" ><a routerLink="/images" fragment="News">News</a></button>
+<button [ngStyle]="{'margin.px': 20,
+ 'padding.px': 10,
+ 'width.px': 100,
+ 'border': 'none',
+ 'color':'white',
+ 'background-color':'RGB(214, 80, 118)',
+ 'border-radius.px':5,
+ 'font-size.px':15,
+  'font-weight':500
+}" ><a routerLink="/images" fragment="Reviews">Reviews</a></button>
+<button [ngStyle]="{'margin.px': 20,
+ 'padding.px': 10,
+ 'width.px': 100,
+ 'border': 'none',
+ 'color':'white',
+ 'background-color':'grey',
+ 'border-radius.px':5,
+ 'font-size.px':15,
+  'font-weight':500
+}" ><a routerLink="/About" fragment="popup">Back</a></button>
+</div>
+
+
+
+<!-- <h3>Product Cart Timer: {{ timer }}</h3>
+<div *ngIf="offerStatus" class="offerStatus">
+  <marquee behavior="scroll" direction="left">
+<div class="flex-text">
+  <p class="dancing-text">Offer is live now</p>
+
+</div>
+</marquee>
+</div> -->
+
+
+
+<h2 style="margin-left: 4%;margin-top: 3%; font-size: 28px;" id="Images">Images</h2>
+
+<h4 style="margin-left: 4%;">Total Models Images:{{" "}}{{TotalModels | async}}</h4>
+<div class="products-container" >
+<div class="product-item" *ngFor="let product of models">
+
+  <div class="sale-container" >
+    <div class="add--to--wishlist">
+      <i class="fa fa-heart-o"></i>
+    </div>
+    <!-- <div class="sale-tag" *ngIf="product.discountPrice">
+      {{(((product.price-product.discountPrice)/product.price)*100).toFixed(0)}}%OFF</div> -->
+   </div>
+  <div class="product-image">
+      <img [src]="product.imageUrl" class="product--image">
+  </div>
+  <div class="add--to--price">
+     <!-- {{product.discountPrice? (product.price-(product.price*product.discountPrice/100)).toFixed(0):product.price}} -->
+     {{product.discountPrice? product.discountPrice:product.price}}
+  </div>
+  <!-- <div class="add--to--price" *ngIf="product.discountPrice">
+    {{(product.price-(product.price*product.discountPrice/100)).toFixed(0)}}
+ </div> -->
+  <div class="product--name">{{product.name}}</div>
+  <div class="product--category">Items-left:{{product.items_left}}</div>
+  <div class="product--available-colors">$COLORCOUNT {{product.color.length}} . Best Seller</div>
+
+  <!-- <button style="margin-left: 60px;margin-top: 20px;text-decoration: none;" id="button1"><a routerLink="/Models" >Show more Details</a></button> -->
+</div>
+
+</div>
+</div>
+
+<h2 style="margin-left: 4%;margin-top: 3%; font-size: 28px;" id="News">News</h2>
+<div class="reviews" >
+ <mat-card class="example-card" *ngFor="let item of news">
+  <mat-card-header>
+
+    <mat-card-title>{{item.name}}</mat-card-title>
+
+  </mat-card-header>
+  <img
+  mat-card-image src="{{item.imageUrl}}">
+  <mat-card-content>
+    <p>
+      {{item.content}}
+    </p>
+  </mat-card-content>
+
+</mat-card>
+</div>
+
+
+<!-- <mat-paginator [length]="100"
+              [pageSize]="10"
+              [pageSizeOptions]="[5, 10, 25, 100]"
+              aria-label="Select page">
+</mat-paginator> -->
+
+<div class="news">
+  <h2 style="margin-left: 4%;margin-top: 3%; font-size: 28px;" id="Reviews">Reviews</h2>
+  <div class="News-content"style="margin-left: 50px;">
+
+    <mat-card class="example-card" *ngFor="let item of reviews">
+      <div class="stars" style="color: orange;margin-left: 20px;">
+      <i class="fa-sharp fa-solid fa-star"></i>
+      <i class="fa-sharp fa-solid fa-star"></i>
+      <i class="fa-sharp fa-solid fa-star"></i>
+      <i class="fa-sharp fa-solid fa-star"></i>
+      <i class="fa-sharp fa-solid fa-star"></i>
+    </div>
+     <mat-card-header>
+
+       <mat-card-title>{{item.title}}</mat-card-title>
+
+     </mat-card-header>
+
+     <mat-card-content>
+
+       <p>
+        {{item.parah}}
+
+       </p>
+       <h5>{{item.name}}</h5>
+       <h5>{{item.views}}</h5>
+     </mat-card-content>
+
+   </mat-card>
+
+</div>
+<app-footer></app-footer>

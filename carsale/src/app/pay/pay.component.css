@@ -1,0 +1,71 @@
+.debit p{
+  color: red;
+  font-size: 18px;
+  font-family: poppins;
+  margin-top: 2px;
+}
+#field1
+{
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid black;
+  width: 70%;
+  outline: none;
+  background: transparent;
+  color: white;
+
+}
+#field2
+{
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid black;
+  outline: none;
+  background: transparent;
+
+}
+#field3
+{
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid black;
+  outline: none;
+  width: 25%;
+  background: transparent;
+}
+.debit{
+  width: 70%;
+  /* margin: 50px 50px 50px 50px; */
+  margin-left: 12%;
+  margin-top: 6%;
+  background-color:#130f40;
+  /* padding-left:10%; */
+  padding: 10px;
+}
+.debit h2{
+  color: white;
+  margin: 15%;
+  font-family: poppins;
+  font-weight: bold;
+  margin-top: -10px;
+}
+.credit-card{
+  padding: 10px;
+}
+label,input{
+  color: white;
+  font-family: poppins;
+  font-size: 18px;
+  /* padding: 5px; */
+}
+input #placeholder{
+   color: darkgrey;
+   font-size: 18px;
+   font-family: poppins;
+}
+.input{
+  border-bottom: white;
+}
